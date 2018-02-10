@@ -1,0 +1,1 @@
+Terminal git add, commit and push test
