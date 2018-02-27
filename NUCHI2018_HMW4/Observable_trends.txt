@@ -1,0 +1,6 @@
+Observable Trends:
+There are more male players than female players. Less than 2% of the players are non disclosed, however they are the ones who spent the most per purchase.
+The players between 20- 24 years old are the ones who spend more money in the game. The highest revenue for the company comes from the players between 15-29 years old. However, the players older than 40 years spend more in average for a single purchase.
+The item 'Retribution Axe' is the most profitable of Heroes of Pymoli, it is in the top 5 of most popular items and it also has one of the highest unit price.
+
+Additionaly, there are other trends that we can see in the data that wasn't asked for this homework like the least purchased items. The company can analyze if they want to remove some items that are not popular and people doesn't buy it. We can also d
