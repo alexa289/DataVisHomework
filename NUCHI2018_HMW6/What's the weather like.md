@@ -75,29 +75,11 @@ longitude = random_long_coord
 
 ```python
 #Test the function to return city and country
-city= citipy.nearest_city(latitude[0],longitude[0])
+#city= citipy.nearest_city(latitude[0],longitude[0])
 #city
-city.city_name
+#city.city_name
+#city.country_code
 ```
-
-
-
-
-    'vaini'
-
-
-
-
-```python
-city.country_code
-```
-
-
-
-
-    'to'
-
-
 
 
 ```python
@@ -112,13 +94,13 @@ for x in range(0,max_coord):
 city_list = []
 for x in range(0,max_coord):
     city = city_names[x].city_name
-    print(city_names[x].city_name)
+    #print(city_names[x].city_name)
     city_list.append(city)
 
 country_list = []
 for y in range(0,max_coord):
     country = city_names[y].country_code
-    print(city_names[y].country_code)
+    #print(city_names[y].country_code)
     country_list.append(country)
 
 #Generate Dataframe
@@ -154,3031 +136,8 @@ plt.savefig('50 Cities in the world')
 plt.show()
 ```
 
-    vaini
-    yellowknife
-    hithadhoo
-    marsa matruh
-    basco
-    cherskiy
-    beruwala
-    butaritari
-    qaanaaq
-    new norfolk
-    kavaratti
-    busselton
-    pangnirtung
-    rodbyhavn
-    pangnirtung
-    hobart
-    hovd
-    shimoda
-    kaitangata
-    chuy
-    rikitea
-    albany
-    ruatoria
-    torbay
-    sitka
-    tiksi
-    atar
-    puri
-    poum
-    vao
-    mataura
-    barrow
-    avera
-    barrow
-    airai
-    iqaluit
-    sheridan
-    grand river south east
-    rikitea
-    broome
-    axim
-    san carlos de bariloche
-    ushuaia
-    mys shmidta
-    coquimbo
-    mataura
-    rikitea
-    dong hoi
-    rikitea
-    busselton
-    norman wells
-    faanui
-    verkhnevilyuysk
-    cape town
-    bereda
-    busselton
-    new norfolk
-    saint george
-    bonthe
-    rikitea
-    taolanaro
-    ouadda
-    el dorado
-    hobart
-    ribeira grande
-    rikitea
-    shangrao
-    upernavik
-    sioux lookout
-    chokurdakh
-    jamestown
-    chuy
-    punta arenas
-    tiksi
-    gorno-chuyskiy
-    east london
-    belushya guba
-    geraldton
-    kodiak
-    dikson
-    arraial do cabo
-    vaini
-    busselton
-    amderma
-    tura
-    tuktoyaktuk
-    rantauprapat
-    samarai
-    saleaula
-    kapaa
-    komsomolskiy
-    shenjiamen
-    new norfolk
-    busselton
-    castro
-    yellowknife
-    rikitea
-    ushuaia
-    taolanaro
-    orlik
-    hobart
-    mahebourg
-    zhuhai
-    amparafaravola
-    illoqqortoormiut
-    anadyr
-    punta arenas
-    sorland
-    belushya guba
-    severo-kurilsk
-    albany
-    kribi
-    sao joao da barra
-    komsomolskiy
-    kushiro
-    norman wells
-    north bend
-    tuatapere
-    emerald
-    bambous virieux
-    albany
-    esperance
-    san cristobal
-    clyde river
-    gazojak
-    pouebo
-    torbay
-    ushuaia
-    karamea
-    montepuez
-    damaturu
-    puerto ayora
-    yulara
-    yar-sale
-    olinda
-    bredasdorp
-    poso
-    hauge
-    phan rang
-    rikitea
-    cayenne
-    mataura
-    ribeira grande
-    hobart
-    yellowknife
-    tiksi
-    hobart
-    torbay
-    albany
-    herten
-    rikitea
-    punta arenas
-    mataura
-    marzuq
-    richards bay
-    mar del plata
-    coihaique
-    narsaq
-    tumannyy
-    upernavik
-    rikitea
-    mahajanga
-    vila franca do campo
-    ribeira grande
-    lompoc
-    vaini
-    bar harbor
-    east london
-    korla
-    beringovskiy
-    belushya guba
-    hobart
-    san quintin
-    punta arenas
-    hilo
-    saskylakh
-    tornio
-    barrow
-    mataura
-    safita
-    ushuaia
-    busselton
-    puerto ayora
-    marawi
-    olafsvik
-    kudahuvadhoo
-    boa vista
-    hilo
-    atuona
-    sorland
-    karamea
-    barrow
-    vaini
-    saskylakh
-    ushuaia
-    bredasdorp
-    nanortalik
-    victoria
-    hermanus
-    cabo san lucas
-    guanica
-    rikitea
-    namibe
-    busselton
-    carnarvon
-    norman wells
-    naze
-    petropavlovsk-kamchatskiy
-    half moon bay
-    busselton
-    georgetown
-    qaanaaq
-    arkhangelsk
-    jamestown
-    jamestown
-    constitucion
-    yar-sale
-    labuan
-    castro
-    mazagao
-    bluff
-    new norfolk
-    atuona
-    komsomolets
-    codrington
-    narsaq
-    saleaula
-    tabou
-    cayenne
-    seoul
-    ushuaia
-    tiksi
-    mys shmidta
-    cherskiy
-    muros
-    nikolskoye
-    dakar
-    chapais
-    saint-philippe
-    busselton
-    bluff
-    oranjemund
-    punta umbria
-    luena
-    laguna
-    vilhena
-    tchaourou
-    avarua
-    bambous virieux
-    cidreira
-    tubruq
-    nyurba
-    basco
-    lima
-    mount darwin
-    bambous virieux
-    garowe
-    jalu
-    taolanaro
-    victoria
-    hermanus
-    bluff
-    deming
-    cherskiy
-    hermanus
-    new norfolk
-    puerto ayora
-    tiksi
-    belushya guba
-    antofagasta
-    guerrero negro
-    ledenice
-    taolanaro
-    mar del plata
-    souillac
-    elda
-    salinas
-    florence
-    oistins
-    nacala
-    douentza
-    yellowknife
-    cabo san lucas
-    bambanglipuro
-    mataura
-    georgetown
-    voh
-    svetlogorsk
-    bambous virieux
-    bethel
-    georgetown
-    rikitea
-    khatanga
-    saint-philippe
-    vanavara
-    bathsheba
-    mataura
-    barentsburg
-    punta arenas
-    puerto ayora
-    vao
-    inta
-    nikolskoye
-    albany
-    tanout
-    albany
-    rikitea
-    barentsburg
-    new norfolk
-    tsihombe
-    aquiraz
-    tual
-    port alfred
-    north platte
-    havre-saint-pierre
-    dikson
-    port alfred
-    castro
-    busselton
-    hobart
-    belushya guba
-    provideniya
-    saint george
-    mataura
-    ushuaia
-    cape town
-    port alfred
-    khash
-    rikitea
-    albany
-    ponta do sol
-    adolfo ruiz cortines
-    mokhsogollokh
-    hilo
-    east london
-    hermanus
-    ushuaia
-    ushuaia
-    ushuaia
-    busselton
-    belushya guba
-    kodiak
-    burhaniye
-    avarua
-    punta arenas
-    vaitupu
-    butaritari
-    tsihombe
-    rikitea
-    saint-francois
-    sioux lookout
-    avera
-    gouyave
-    vaitupu
-    cockburn town
-    mayo
-    sorland
-    rikitea
-    dongning
-    pokhara
-    coffs harbour
-    utiroa
-    hobart
-    mjolby
-    kang
-    caravelas
-    mae sai
-    kaeo
-    puerto del rosario
-    krutikha
-    ushuaia
-    arraial do cabo
-    tasiilaq
-    hobart
-    chapais
-    georgetown
-    mataura
-    hobart
-    raudeberg
-    vaini
-    vila velha
-    alvorada
-    beira
-    mahebourg
-    flinders
-    djambala
-    richards bay
-    punta arenas
-    vestmannaeyjar
-    norman wells
-    guerrero negro
-    samusu
-    puerto ayora
-    nantucket
-    hithadhoo
-    lavrentiya
-    kabare
-    gongzhuling
-    illoqqortoormiut
-    mount isa
-    barreiras
-    busselton
-    mar del plata
-    sao joao da barra
-    new norfolk
-    busselton
-    toliary
-    katsuura
-    vardo
-    lowestoft
-    bluff
-    yellowknife
-    torbay
-    kaitangata
-    port-gentil
-    rungata
-    yellowknife
-    vestmannaeyjar
-    muros
-    katsuura
-    kapaa
-    kodiak
-    busselton
-    mataura
-    yulara
-    tongliao
-    kenai
-    umzimvubu
-    qaanaaq
-    constitucion
-    bluff
-    clyde river
-    punta arenas
-    longlac
-    qaanaaq
-    belyy yar
-    guerrero negro
-    punta arenas
-    pacific grove
-    rikitea
-    gornopravdinsk
-    avarua
-    geraldton
-    westport
-    norman wells
-    luderitz
-    dikson
-    salinopolis
-    victoria
-    punta arenas
-    sassandra
-    westport
-    port elizabeth
-    saint anthony
-    punta arenas
-    taolanaro
-    bethel
-    gushikawa
-    ostrovnoy
-    jamestown
-    ilulissat
-    khatanga
-    cidreira
-    punta arenas
-    esperance
-    srednekolymsk
-    illoqqortoormiut
-    savannah bight
-    antalaha
-    provideniya
-    castro
-    novomalorossiyskaya
-    grindavik
-    punta arenas
-    rikitea
-    port alfred
-    punta arenas
-    bengkulu
-    busselton
-    albany
-    saint-philippe
-    mys shmidta
-    qaanaaq
-    codrington
-    cape town
-    xucheng
-    bestobe
-    hamilton
-    punta arenas
-    chuguyevka
-    mataura
-    saint-philippe
-    olinda
-    porto novo
-    taolanaro
-    vaini
-    rikitea
-    harper
-    avarua
-    belushya guba
-    rungata
-    pemangkat
-    punta arenas
-    butaritari
-    puerto ayora
-    georgetown
-    kodinsk
-    bluff
-    dikson
-    carnarvon
-    birecik
-    yaan
-    agde
-    jamestown
-    busselton
-    lagoa
-    atuona
-    tucumcari
-    cherskiy
-    illoqqortoormiut
-    pochutla
-    geraldton
-    biu
-    tuktoyaktuk
-    jamestown
-    fallon
-    lompoc
-    jamestown
-    carutapera
-    jamestown
-    kirakira
-    port elizabeth
-    avarua
-    alice town
-    busselton
-    rikitea
-    dicabisagan
-    georgetown
-    lolua
-    tervel
-    hithadhoo
-    pasighat
-    castro
-    mataura
-    rikitea
-    busselton
-    moba
-    sokolo
-    kimberley
-    vaini
-    busselton
-    albany
-    qaanaaq
-    palu
-    pospelikha
-    chuy
-    dikson
-    hilo
-    ponta do sol
-    atuona
-    samusu
-    bengkulu
-    vaini
-    tura
-    komsomolskiy
-    bluff
-    khatanga
-    nikolskoye
-    mackay
-    mishelevka
-    tuktoyaktuk
-    rikitea
-    uribia
-    geraldton
-    new norfolk
-    alta gracia
-    lalsot
-    ribeira grande
-    jamestown
-    port alfred
-    conakry
-    mbengwi
-    knyaze-volkonskoye
-    ushuaia
-    oss
-    exeter
-    viedma
-    mosquera
-    punta arenas
-    tiksi
-    ancud
-    bengkulu
-    kloulklubed
-    port alfred
-    amga
-    cape town
-    louisbourg
-    hermanus
-    lorengau
-    rapallo
-    acapulco
-    bukama
-    huarmey
-    hofn
-    saleaula
-    busselton
-    trelew
-    kapaa
-    tambun
-    cidreira
-    boyolangu
-    mataura
-    sinnamary
-    cabra
-    port alfred
-    port elizabeth
-    punta arenas
-    rikitea
-    atar
-    biak
-    watertown
-    det udom
-    hilo
-    taolanaro
-    elizabeth city
-    beidao
-    ilulissat
-    nanortalik
-    leningradskiy
-    kruisfontein
-    east london
-    mataura
-    saleaula
-    rikitea
-    bluff
-    albany
-    port hardy
-    galle
-    neuquen
-    busselton
-    taolanaro
-    albany
-    ushuaia
-    vardo
-    taoudenni
-    ghugus
-    saint-augustin
-    punta arenas
-    cape town
-    caapucu
-    ribeira grande
-    barentsburg
-    avarua
-    januaria
-    avarua
-    rikitea
-    jibuti
-    plainview
-    chumikan
-    jiroft
-    chute-aux-outardes
-    hithadhoo
-    saskylakh
-    gornopravdinsk
-    bredasdorp
-    tuktoyaktuk
-    longyearbyen
-    saint george
-    kavieng
-    mar del plata
-    rawson
-    bluff
-    cape town
-    pasni
-    bluff
-    tuktoyaktuk
-    provideniya
-    octeville
-    saint-gaudens
-    nikolskoye
-    albany
-    kapaa
-    torbay
-    khatanga
-    altinopolis
-    hobart
-    ushuaia
-    rundu
-    ushuaia
-    ponta do sol
-    aklavik
-    gwadar
-    albany
-    butaritari
-    butaritari
-    meadow lake
-    nizhneyansk
-    hithadhoo
-    kudahuvadhoo
-    kodiak
-    antofagasta
-    tombouctou
-    cape town
-    busselton
-    xingyi
-    tanout
-    barrow
-    hilo
-    thunder bay
-    tumannyy
-    mataura
-    albany
-    taolanaro
-    hermanus
-    saleaula
-    cape town
-    cabo san lucas
-    nizhnevartovsk
-    dikson
-    hailar
-    mount gambier
-    kapaa
-    mataura
-    provideniya
-    mataura
-    new norfolk
-    avarua
-    west bay
-    waipawa
-    port alfred
-    poitiers
-    naze
-    walvis bay
-    albany
-    illoqqortoormiut
-    sorong
-    barentsburg
-    emerald
-    sapa
-    port moresby
-    tchibanga
-    souillac
-    rikitea
-    namatanai
-    hobart
-    najran
-    illoqqortoormiut
-    hamilton
-    karmana
-    syriam
-    mar del plata
-    pemangkat
-    upernavik
-    saldanha
-    belushya guba
-    sentyabrskiy
-    vestmannaeyjar
-    saint-joseph
-    ohara
-    bilibino
-    vaini
-    puerto ayora
-    les cayes
-    ushuaia
-    port alfred
-    yarensk
-    louisbourg
-    amderma
-    vicuna
-    saint-philippe
-    taolanaro
-    vaini
-    plettenberg bay
-    ilulissat
-    tilsonburg
-    victoria
-    margate
-    kodiak
-    barrow
-    mataura
-    vyazemskiy
-    andra
-    port alfred
-    mataura
-    vostok
-    coahuayana
-    vaini
-    mar del plata
-    thompson
-    mahebourg
-    kargasok
-    hithadhoo
-    port alfred
-    awjilah
-    bredasdorp
-    vaini
-    torbay
-    albany
-    mataura
-    tiksi
-    sarkand
-    jamestown
-    esperance
-    buraydah
-    kaitangata
-    carnarvon
-    butterworth
-    mataura
-    esperance
-    albany
-    provideniya
-    clyde river
-    port alfred
-    mayo
-    atuona
-    illoqqortoormiut
-    mataura
-    mar del plata
-    torbay
-    cidreira
-    piacabucu
-    sarkand
-    cherskiy
-    kapaa
-    mataura
-    sedelnikovo
-    portage
-    aasiaat
-    along
-    rikitea
-    samusu
-    kaya
-    nargana
-    pevek
-    sakakah
-    aykhal
-    tucuman
-    ribeira grande
-    banff
-    mehamn
-    alofi
-    mandiana
-    gafargaon
-    assiniboia
-    new norfolk
-    atuona
-    vaini
-    victoria
-    ngawen
-    boulder city
-    vaini
-    belushya guba
-    alofi
-    chuy
-    ciudad bolivar
-    guerrero negro
-    butaritari
-    yurgamysh
-    ushuaia
-    hithadhoo
-    margate
-    tiksi
-    arraial do cabo
-    vaini
-    kapaa
-    mar del plata
-    kununurra
-    jamestown
-    grand river south east
-    san bartolome de tirajana
-    norman wells
-    rikitea
-    astipalaia
-    esperance
-    torbay
-    male
-    bluff
-    taolanaro
-    labuhan
-    bethel
-    zhanakorgan
-    bethel
-    bluff
-    petaling jaya
-    faanui
-    mercedes
-    attawapiskat
-    taolanaro
-    punta arenas
-    ushuaia
-    hambantota
-    provideniya
-    kloulklubed
-    georgiyevka
-    nikolskoye
-    hilo
-    port elizabeth
-    avarua
-    daru
-    san rafael
-    obera
-    pisco
-    pacific grove
-    port elizabeth
-    bengkulu
-    port alfred
-    bredasdorp
-    birao
-    vaini
-    sola
-    vaitupu
-    la vega
-    itarema
-    saint george
-    barrow
-    ushuaia
-    amderma
-    arraial do cabo
-    horana
-    puerto ayora
-    ushuaia
-    cidreira
-    tsihombe
-    barentsburg
-    busselton
-    saint-philippe
-    punta arenas
-    corumba
-    meiganga
-    saint anthony
-    khatanga
-    margate
-    kahului
-    deputatskiy
-    bengkulu
-    vaini
-    new norfolk
-    kamenskoye
-    isangel
-    sentyabrskiy
-    albany
-    saskylakh
-    busselton
-    mareeba
-    sun valley
-    boysun
-    yulara
-    hobart
-    mayahi
-    albany
-    krasnaya polyana
-    nogales
-    abha
-    narsaq
-    kaitangata
-    maniitsoq
-    linxia
-    rikitea
-    katsina
-    fort nelson
-    mataura
-    pisco
-    viedma
-    himora
-    rikitea
-    korla
-    east london
-    hobart
-    jamestown
-    zaigrayevo
-    isangel
-    puerto plata
-    karakendzha
-    chicama
-    kamenskoye
-    mataura
-    qaanaaq
-    nikolskoye
-    cabo san lucas
-    bredasdorp
-    ushuaia
-    hermanus
-    punta arenas
-    saint-philippe
-    hermanus
-    eskasem
-    taolanaro
-    alenquer
-    bonthe
-    avarua
-    buraydah
-    iqaluit
-    busselton
-    busselton
-    codrington
-    saint-augustin
-    cape town
-    thompson
-    clyde river
-    quebo
-    cape town
-    guerrero negro
-    zhangjiakou
-    atuona
-    puerto ayora
-    tasiilaq
-    turukhansk
-    paita
-    riyadh
-    samalaeulu
-    qasigiannguit
-    saskylakh
-    ambulu
-    busselton
-    kushima
-    omboue
-    chokurdakh
-    esperance
-    taolanaro
-    fort nelson
-    umzimvubu
-    albany
-    mataura
-    letlhakane
-    saint-prosper
-    chuy
-    chabahar
-    mataura
-    ignalina
-    poum
-    port alfred
-    vaini
-    redlands
-    punta arenas
-    peniche
-    samusu
-    letlhakane
-    alofi
-    shahgarh
-    hilo
-    katangli
-    puerto ayora
-    sitka
-    barrow
-    lebu
-    albany
-    takapau
-    tiksi
-    hervey bay
-    puerto ayora
-    new norfolk
-    punta arenas
-    sur
-    chuy
-    beloha
-    port-gentil
-    nouadhibou
-    maghama
-    punta arenas
-    olafsvik
-    cape town
-    albany
-    cape town
-    tigil
-    bluff
-    port alfred
-    taolanaro
-    cape town
-    porto murtinho
-    dikson
-    barentsburg
-    beihai
-    vaini
-    port-gentil
-    atasu
-    saint-philippe
-    anadyr
-    saskylakh
-    punta arenas
-    mahebourg
-    hobart
-    rikitea
-    ushuaia
-    ushuaia
-    hearst
-    barrow
-    tamiahua
-    arraial do cabo
-    sur
-    jipijapa
-    parrita
-    castro
-    hithadhoo
-    mataura
-    chitral
-    rikitea
-    ilulissat
-    khani
-    coihaique
-    anton lizardo
-    rikitea
-    gornopravdinsk
-    asau
-    butaritari
-    khatanga
-    sorong
-    tasiilaq
-    sao paulo de olivenca
-    cabo san lucas
-    saint-philippe
-    klaksvik
-    punta arenas
-    khatanga
-    albany
-    tuktoyaktuk
-    vaini
-    palmer
-    dikson
-    vaini
-    chokurdakh
-    carnarvon
-    rikitea
-    santiago
-    bluff
-    mancio lima
-    victoria
-    barrow
-    mahebourg
-    castro
-    puerto ayora
-    mataura
-    punta arenas
-    praia
-    albany
-    hermanus
-    butaritari
-    busselton
-    lakes entrance
-    tuktoyaktuk
-    clyde river
-    taoudenni
-    bengkulu
-    dikson
-    thomaston
-    barrow
-    ushuaia
-    nikolskoye
-    lhokseumawe
-    windhoek
-    saint-philippe
-    busselton
-    hays
-    qiongshan
-    bambous virieux
-    mataura
-    rudsar
-    ixtapa
-    sobolevo
-    atuona
-    powassan
-    taolanaro
-    hailun
-    ushuaia
-    tabiauea
-    udomlya
-    tuktoyaktuk
-    urumqi
-    hermanus
-    salamanca
-    kaspiyskiy
-    pevek
-    mataura
-    port blair
-    ushuaia
-    joaquim gomes
-    victoria
-    ushuaia
-    asau
-    ponta do sol
-    taolanaro
-    shirgaon
-    vaitupu
-    kavieng
-    oriximina
-    khandyga
-    port elizabeth
-    georgetown
-    albany
-    tupik
-    kapaa
-    omboue
-    cururupu
-    hamilton
-    taolanaro
-    karatau
-    hilo
-    quatre cocos
-    seoul
-    yanahuanca
-    albany
-    kruisfontein
-    eyrarbakki
-    punta arenas
-    liwale
-    avarua
-    nizhneyansk
-    laguna
-    arraial do cabo
-    saint-philippe
-    hobart
-    kaitangata
-    illoqqortoormiut
-    deputatskiy
-    saint george
-    taolanaro
-    laguna
-    fayaoue
-    busselton
-    jamestown
-    catamarca
-    plettenberg bay
-    mar del plata
-    barrow
-    albany
-    hilo
-    carnarvon
-    marcona
-    atuona
-    tsihombe
-    victoria
-    ushuaia
-    qaanaaq
-    kapaa
-    kajaani
-    qaanaaq
-    nikolskoye
-    bluff
-    new norfolk
-    tuktoyaktuk
-    punta arenas
-    vaini
-    atuona
-    hilo
-    albany
-    nanortalik
-    caravelas
-    chagda
-    cape town
-    birjand
-    mataura
-    vanimo
-    ushuaia
-    vestmannaeyjar
-    storforshei
-    bandarbeyla
-    mys shmidta
-    severo-kurilsk
-    atuona
-    cape town
-    punta arenas
-    flinders
-    hermanus
-    port elizabeth
-    clyde river
-    baiima
-    provideniya
-    umzimvubu
-    araouane
-    myanaung
-    guerrero negro
-    hilo
-    aykhal
-    khatanga
-    hermanus
-    tabou
-    fortuna
-    albany
-    cuamba
-    ayan
-    grand-santi
-    punta arenas
-    hithadhoo
-    rikitea
-    ushuaia
-    maldonado
-    punta arenas
-    puerto ayora
-    kapaa
-    tuktoyaktuk
-    padang
-    hithadhoo
-    sao filipe
-    mataura
-    albany
-    mataura
-    acapulco
-    lagoa
-    albany
-    atuona
-    becerril
-    yellowknife
-    nabire
-    coihaique
-    arraial do cabo
-    yellowknife
-    charters towers
-    cape town
-    meadow lake
-    kapaa
-    avarua
-    kytmanovo
-    vila franca do campo
-    atuona
-    laguna
-    awjilah
-    illoqqortoormiut
-    belushya guba
-    hermanus
-    araxa
-    tuktoyaktuk
-    kahului
-    butaritari
-    ushuaia
-    east london
-    rodrigues alves
-    ntoum
-    maragogi
-    bluff
-    panalingaan
-    puerto ayora
-    marystown
-    victoria
-    dikson
-    carnarvon
-    mataura
-    hermanus
-    longyearbyen
-    rikitea
-    barrow
-    dunedin
-    kodiak
-    chuy
-    hobart
-    mataura
-    kunashak
-    rikitea
-    butaritari
-    nieuw amsterdam
-    tiksi
-    jamestown
-    taolanaro
-    comodoro rivadavia
-    bluff
-    mbacke
-    ushuaia
-    palabuhanratu
-    qaanaaq
-    geresk
-    mataura
-    tyukhtet
-    bam
-    richards bay
-    ushuaia
-    nikolskoye
-    jamestown
-    punta arenas
-    ust-kamchatsk
-    ushuaia
-    clyde river
-    tiksi
-    grindavik
-    ushuaia
-    omboue
-    port hardy
-    ushuaia
-    tsihombe
-    tasiilaq
-    ribeira grande
-    teguldet
-    kapaa
-    jamestown
-    souillac
-    ahipara
-    cay
-    atuona
-    belushya guba
-    vaini
-    sturgis
-    rikitea
-    ushuaia
-    punta arenas
-    khorramshahr
-    hobart
-    xuddur
-    yar-sale
-    evensk
-    ponta do sol
-    sitka
-    ofunato
-    sitka
-    port alfred
-    busselton
-    bereda
-    rikitea
-    tuktoyaktuk
-    busselton
-    aklavik
-    cape town
-    vestmannaeyjar
-    hettstedt
-    marsabit
-    lompoc
-    san marcos de colon
-    quatre cocos
-    alta floresta
-    felidhoo
-    kapaa
-    punta arenas
-    pangnirtung
-    samusu
-    cape town
-    butaritari
-    qaanaaq
-    hilo
-    riberalta
-    ribeira grande
-    punta arenas
-    albany
-    atuona
-    cape town
-    bluff
-    ushuaia
-    namatanai
-    isangel
-    jamestown
-    port alfred
-    georgetown
-    rikitea
-    chokurdakh
-    acapulco
-    bandundu
-    mar del plata
-    mataura
-    barrow
-    cape town
-    castro
-    hobart
-    rikitea
-    victoria
-    thompson
-    kapaa
-    puerto ayora
-    port elizabeth
-    serik
-    mataura
-    saint-philippe
-    mataura
-    punta arenas
-    nikolskoye
-    kisaran
-    yar-sale
-    amderma
-    rikitea
-    sentyabrskiy
-    bud
-    belushya guba
-    hermanus
-    ambon
-    port antonio
-    mataura
-    henties bay
-    ebano
-    busselton
-    ushuaia
-    rikitea
-    hermanus
-    thompson
-    srem
-    port alfred
-    tumannyy
-    cape town
-    kismayo
-    ushuaia
-    verkhniy baskunchak
-    ancud
-    bengkulu
-    palana
-    hermanus
-    albany
-    khatanga
-    tiksi
-    bolton
-    torbay
-    pevek
-    mecca
-    chuy
-    guerrero negro
-    cape town
-    meulaboh
-    severo-yeniseyskiy
-    to
-    ca
-    mv
-    eg
-    ph
-    ru
-    lk
-    ki
-    gl
-    au
-    in
-    au
-    ca
-    dk
-    ca
-    au
-    mn
-    jp
-    nz
-    uy
-    pf
-    au
-    nz
-    ca
-    us
-    ru
-    mr
-    in
-    nc
-    nc
-    pf
-    us
-    pf
-    us
-    pw
-    ca
-    us
-    mu
-    pf
-    au
-    gh
-    ar
-    ar
-    ru
-    cl
-    pf
-    pf
-    vn
-    pf
-    au
-    ca
-    pf
-    ru
-    za
-    so
-    au
-    au
-    bm
-    sl
-    pf
-    mg
-    cf
-    co
-    au
-    pt
-    pf
-    cn
-    gl
-    ca
-    ru
-    sh
-    uy
-    cl
-    ru
-    ru
-    za
-    ru
-    au
-    us
-    ru
-    br
-    to
-    au
-    ru
-    ru
-    ca
-    id
-    pg
-    ws
-    us
-    ru
-    cn
-    au
-    au
-    cl
-    ca
-    pf
-    ar
-    mg
-    ru
-    au
-    mu
-    cn
-    mg
-    gl
-    ru
-    cl
-    no
-    ru
-    ru
-    au
-    cm
-    br
-    ru
-    jp
-    ca
-    us
-    nz
-    au
-    mu
-    au
-    au
-    ec
-    ca
-    tm
-    nc
-    ca
-    ar
-    nz
-    mz
-    ng
-    ec
-    au
-    ru
-    br
-    za
-    id
-    no
-    vn
-    pf
-    gf
-    pf
-    pt
-    au
-    ca
-    ru
-    au
-    ca
-    au
-    de
-    pf
-    cl
-    pf
-    ly
-    za
-    ar
-    cl
-    gl
-    ru
-    gl
-    pf
-    mg
-    pt
-    pt
-    us
-    to
-    us
-    za
-    cn
-    ru
-    ru
-    au
-    mx
-    cl
-    us
-    ru
-    fi
-    us
-    pf
-    sy
-    ar
-    au
-    ec
-    sd
-    is
-    mv
-    br
-    us
-    pf
-    no
-    nz
-    us
-    to
-    ru
-    ar
-    za
-    gl
-    sc
-    za
-    mx
-    us
-    pf
-    ao
-    au
-    au
-    ca
-    jp
-    ru
-    us
-    au
-    sh
-    gl
-    ru
-    sh
-    sh
-    mx
-    ru
-    my
-    cl
-    br
-    nz
-    au
-    pf
-    kz
-    ag
-    gl
-    ws
-    ci
-    gf
-    kr
-    ar
-    ru
-    ru
-    ru
-    es
-    ru
-    sn
-    ca
-    re
-    au
-    nz
-    na
-    es
-    ao
-    br
-    br
-    bj
-    ck
-    mu
-    br
-    ly
-    ru
-    ph
-    pe
-    zw
-    mu
-    so
-    ly
-    mg
-    sc
-    za
-    nz
-    us
-    ru
-    za
-    au
-    ec
-    ru
-    ru
-    cl
-    mx
-    cz
-    mg
-    ar
-    mu
-    es
-    us
-    us
-    bb
-    mz
-    ml
-    ca
-    mx
-    id
-    pf
-    sh
-    nc
-    ru
-    mu
-    us
-    sh
-    pf
-    ru
-    re
-    ru
-    bb
-    pf
-    sj
-    cl
-    ec
-    nc
-    ru
-    ru
-    au
-    ne
-    au
-    pf
-    sj
-    au
-    mg
-    br
-    id
-    za
-    us
-    ca
-    ru
-    za
-    cl
-    au
-    au
-    ru
-    ru
-    bm
-    pf
-    ar
-    za
-    za
-    ir
-    pf
-    au
-    cv
-    mx
-    ru
-    us
-    za
-    za
-    ar
-    ar
-    ar
-    au
-    ru
-    us
-    tr
-    ck
-    cl
-    wf
-    ki
-    mg
-    pf
-    gp
-    ca
-    pf
-    gd
-    wf
-    tc
-    ca
-    no
-    pf
-    cn
-    np
-    au
-    ki
-    au
-    se
-    bw
-    br
-    th
-    nz
-    es
-    ru
-    ar
-    br
-    gl
-    au
-    ca
-    sh
-    pf
-    au
-    no
-    to
-    br
-    br
-    mz
-    mu
-    au
-    cg
-    za
-    cl
-    is
-    ca
-    mx
-    ws
-    ec
-    us
-    mv
-    ru
-    cd
-    cn
-    gl
-    au
-    br
-    au
-    ar
-    br
-    au
-    au
-    mg
-    jp
-    no
-    gb
-    nz
-    ca
-    ca
-    nz
-    ga
-    ki
-    ca
-    is
-    es
-    jp
-    us
-    us
-    au
-    pf
-    au
-    cn
-    us
-    za
-    gl
-    mx
-    nz
-    ca
-    cl
-    ca
-    gl
-    ru
-    mx
-    cl
-    us
-    pf
-    ru
-    ck
-    au
-    nz
-    ca
-    na
-    ru
-    br
-    sc
-    cl
-    ci
-    nz
-    za
-    ca
-    cl
-    mg
-    us
-    jp
-    ru
-    sh
-    gl
-    ru
-    br
-    cl
-    au
-    ru
-    gl
-    hn
-    mg
-    ru
-    cl
-    ru
-    is
-    cl
-    pf
-    za
-    cl
-    id
-    au
-    au
-    re
-    ru
-    gl
-    ag
-    za
-    cn
-    kz
-    us
-    cl
-    ru
-    pf
-    re
-    br
-    cv
-    mg
-    to
-    pf
-    lr
-    ck
-    ru
-    ki
-    id
-    cl
-    ki
-    ec
-    sh
-    ru
-    nz
-    ru
-    au
-    tr
-    cn
-    fr
-    sh
-    au
-    pt
-    pf
-    us
-    ru
-    gl
-    mx
-    au
-    ng
-    ca
-    sh
-    us
-    us
-    sh
-    br
-    sh
-    sb
-    za
-    ck
-    bs
-    au
-    pf
-    ph
-    sh
-    tv
-    bg
-    mv
-    in
-    cl
-    pf
-    pf
-    au
-    cd
-    ml
-    ca
-    to
-    au
-    au
-    gl
-    id
-    ru
-    uy
-    ru
-    us
-    cv
-    pf
-    ws
-    id
-    to
-    ru
-    ru
-    nz
-    ru
-    ru
-    au
-    ru
-    ca
-    pf
-    co
-    au
-    au
-    ar
-    in
-    pt
-    sh
-    za
-    gn
-    cm
-    ru
-    ar
-    nl
-    gb
-    ar
-    co
-    cl
-    ru
-    cl
-    id
-    pw
-    za
-    ru
-    za
-    ca
-    za
-    pg
-    it
-    mx
-    cd
-    pe
-    is
-    ws
-    au
-    ar
-    us
-    id
-    br
-    id
-    pf
-    gf
-    ph
-    za
-    za
-    cl
-    pf
-    mr
-    id
-    us
-    th
-    us
-    mg
-    us
-    cn
-    gl
-    gl
-    ru
-    za
-    za
-    pf
-    ws
-    pf
-    nz
-    au
-    ca
-    lk
-    ar
-    au
-    mg
-    au
-    ar
-    no
-    ml
-    in
-    ca
-    cl
-    za
-    py
-    pt
-    sj
-    ck
-    br
-    ck
-    pf
-    dj
-    us
-    ru
-    ir
-    ca
-    mv
-    ru
-    ru
-    za
-    ca
-    sj
-    bm
-    pg
-    ar
-    ar
-    nz
-    za
-    pk
-    nz
-    ca
-    ru
-    fr
-    fr
-    ru
-    au
-    us
-    ca
-    ru
-    br
-    au
-    ar
-    na
-    ar
-    cv
-    ca
-    pk
-    au
-    ki
-    ki
-    ca
-    ru
-    mv
-    mv
-    us
-    cl
-    ml
-    za
-    au
-    cn
-    ne
-    us
-    us
-    ca
-    ru
-    pf
-    au
-    mg
-    za
-    ws
-    za
-    mx
-    ru
-    ru
-    cn
-    au
-    us
-    pf
-    ru
-    pf
-    au
-    ck
-    ky
-    nz
-    za
-    fr
-    jp
-    na
-    au
-    gl
-    id
-    sj
-    au
-    ph
-    pg
-    ga
-    mu
-    pf
-    pg
-    au
-    sa
-    gl
-    bm
-    uz
-    mm
-    ar
-    id
-    gl
-    za
-    ru
-    ru
-    is
-    re
-    jp
-    ru
-    to
-    ec
-    ht
-    ar
-    za
-    ru
-    ca
-    ru
-    cl
-    re
-    mg
-    to
-    za
-    gl
-    ca
-    sc
-    za
-    us
-    us
-    pf
-    ru
-    ru
-    za
-    pf
-    ru
-    mx
-    to
-    ar
-    ca
-    mu
-    ru
-    mv
-    za
-    ly
-    za
-    to
-    ca
-    au
-    pf
-    ru
-    kz
-    sh
-    au
-    sa
-    nz
-    au
-    za
-    pf
-    au
-    au
-    ru
-    ca
-    za
-    ca
-    pf
-    gl
-    pf
-    ar
-    ca
-    br
-    br
-    kz
-    ru
-    us
-    pf
-    ru
-    us
-    gl
-    in
-    pf
-    ws
-    bf
-    pa
-    ru
-    sa
-    ru
-    ar
-    pt
-    ca
-    no
-    nu
-    gn
-    bd
-    ca
-    au
-    pf
-    to
-    sc
-    id
-    us
-    to
-    ru
-    nu
-    uy
-    ve
-    mx
-    ki
-    ru
-    ar
-    mv
-    za
-    ru
-    br
-    to
-    us
-    ar
-    au
-    sh
-    mu
-    es
-    ca
-    pf
-    gr
-    au
-    ca
-    mv
-    nz
-    mg
-    id
-    us
-    kz
-    us
-    nz
-    my
-    pf
-    ar
-    ca
-    mg
-    cl
-    ar
-    lk
-    ru
-    pw
-    kz
-    ru
-    us
-    za
-    ck
-    pg
-    ar
-    ar
-    pe
-    us
-    za
-    id
-    za
-    za
-    cf
-    to
-    vu
-    wf
-    do
-    br
-    bm
-    us
-    ar
-    ru
-    br
-    lk
-    ec
-    ar
-    br
-    mg
-    sj
-    au
-    re
-    cl
-    br
-    cm
-    ca
-    ru
-    za
-    us
-    ru
-    id
-    to
-    au
-    ru
-    vu
-    ru
-    au
-    ru
-    au
-    au
-    us
-    uz
-    au
-    au
-    ne
-    au
-    ru
-    us
-    sa
-    gl
-    nz
-    gl
-    cn
-    pf
-    ng
-    ca
-    pf
-    pe
-    ar
-    et
-    pf
-    cn
-    za
-    au
-    sh
-    ru
-    vu
-    do
-    tj
-    pe
-    ru
-    pf
-    gl
-    ru
-    mx
-    za
-    ar
-    za
-    cl
-    re
-    za
-    af
-    mg
-    br
-    sl
-    ck
-    sa
-    ca
-    au
-    au
-    ag
-    ca
-    za
-    ca
-    ca
-    gw
-    za
-    mx
-    cn
-    pf
-    ec
-    gl
-    ru
-    pe
-    sa
-    ws
-    gl
-    ru
-    id
-    au
-    jp
-    ga
-    ru
-    au
-    mg
-    ca
-    za
-    au
-    pf
-    bw
-    ca
-    uy
-    ir
-    pf
-    lt
-    nc
-    za
-    to
-    us
-    cl
-    pt
-    ws
-    bw
-    nu
-    in
-    us
-    ru
-    ec
-    us
-    us
-    cl
-    au
-    nz
-    ru
-    au
-    ec
-    au
-    cl
-    om
-    uy
-    mg
-    ga
-    mr
-    mr
-    cl
-    is
-    za
-    au
-    za
-    ru
-    nz
-    za
-    mg
-    za
-    br
-    ru
-    sj
-    cn
-    to
-    ga
-    kz
-    re
-    ru
-    ru
-    cl
-    mu
-    au
-    pf
-    ar
-    ar
-    ca
-    us
-    mx
-    br
-    om
-    ec
-    cr
-    cl
-    mv
-    pf
-    pk
-    pf
-    gl
-    ru
-    cl
-    mx
-    pf
-    ru
-    tv
-    ki
-    ru
-    id
-    gl
-    br
-    mx
-    re
-    fo
-    cl
-    ru
-    au
-    ca
-    to
-    us
-    ru
-    to
-    ru
-    au
-    pf
-    br
-    nz
-    br
-    sc
-    us
-    mu
-    cl
-    ec
-    pf
-    cl
-    cv
-    au
-    za
-    ki
-    au
-    au
-    ca
-    ca
-    ml
-    id
-    ru
-    us
-    us
-    ar
-    ru
-    id
-    na
-    re
-    au
-    us
-    cn
-    mu
-    pf
-    ir
-    mx
-    ru
-    pf
-    ca
-    mg
-    cn
-    ar
-    ki
-    ru
-    ca
-    cn
-    za
-    cl
-    ru
-    ru
-    pf
-    in
-    ar
-    br
-    sc
-    ar
-    tv
-    cv
-    mg
-    in
-    wf
-    pg
-    br
-    ru
-    za
-    gy
-    au
-    ru
-    us
-    ga
-    br
-    bm
-    mg
-    kz
-    us
-    mu
-    kr
-    pe
-    au
-    za
-    is
-    cl
-    tz
-    ck
-    ru
-    br
-    br
-    re
-    au
-    nz
-    gl
-    ru
-    bm
-    mg
-    br
-    nc
-    au
-    sh
-    ar
-    za
-    ar
-    us
-    au
-    us
-    au
-    pe
-    pf
-    mg
-    sc
-    ar
-    gl
-    us
-    fi
-    gl
-    ru
-    nz
-    au
-    ca
-    cl
-    to
-    pf
-    us
-    au
-    gl
-    br
-    ru
-    za
-    ir
-    pf
-    pg
-    ar
-    is
-    no
-    so
-    ru
-    ru
-    pf
-    za
-    cl
-    au
-    za
-    za
-    ca
-    sl
-    ru
-    za
-    ml
-    mm
-    mx
-    us
-    ru
-    ru
-    za
-    ci
-    us
-    au
-    mz
-    ru
-    gf
-    cl
-    mv
-    pf
-    ar
-    uy
-    cl
-    ec
-    us
-    ca
-    id
-    mv
-    cv
-    pf
-    au
-    pf
-    mx
-    pt
-    au
-    pf
-    co
-    ca
-    id
-    cl
-    br
-    ca
-    au
-    za
-    ca
-    us
-    ck
-    ru
-    pt
-    pf
-    br
-    ly
-    gl
-    ru
-    za
-    br
-    ca
-    us
-    ki
-    ar
-    za
-    br
-    ga
-    br
-    nz
-    ph
-    ec
-    ca
-    sc
-    ru
-    au
-    pf
-    za
-    sj
-    pf
-    us
-    nz
-    us
-    uy
-    au
-    pf
-    ru
-    pf
-    ki
-    sr
-    ru
-    sh
-    mg
-    ar
-    nz
-    sn
-    ar
-    id
-    gl
-    af
-    pf
-    ru
-    ir
-    za
-    ar
-    ru
-    sh
-    cl
-    ru
-    ar
-    ca
-    ru
-    is
-    ar
-    ga
-    ca
-    ar
-    mg
-    gl
-    pt
-    ru
-    us
-    sh
-    mu
-    nz
-    tr
-    pf
-    ru
-    to
-    us
-    pf
-    ar
-    cl
-    ir
-    au
-    so
-    ru
-    ru
-    pt
-    us
-    jp
-    us
-    za
-    au
-    so
-    pf
-    ca
-    au
-    ca
-    za
-    is
-    de
-    ke
-    us
-    hn
-    mu
-    br
-    mv
-    us
-    cl
-    ca
-    ws
-    za
-    ki
-    gl
-    us
-    bo
-    pt
-    cl
-    au
-    pf
-    za
-    nz
-    ar
-    pg
-    vu
-    sh
-    za
-    sh
-    pf
-    ru
-    mx
-    cd
-    ar
-    pf
-    us
-    za
-    cl
-    au
-    pf
-    sc
-    ca
-    us
-    ec
-    za
-    tr
-    pf
-    re
-    pf
-    cl
-    ru
-    id
-    ru
-    ru
-    pf
-    ru
-    no
-    ru
-    za
-    id
-    jm
-    pf
-    na
-    mx
-    au
-    ar
-    pf
-    za
-    ca
-    pl
-    za
-    ru
-    za
-    so
-    ar
-    ru
-    cl
-    id
-    ru
-    za
-    au
-    ru
-    ru
-    ca
-    ca
-    ru
-    sa
-    uy
-    mx
-    za
-    id
-    ru
 
-
-
-![png](output_7_1.png)
-
-
-
-```python
-#See the random coordenates in the map for the nearest cities:
-import cartopy.crs as ccrs
-
-fig, ax = plt.subplots(figsize = (20,10))
-
-ax = plt.axes(projection=ccrs.PlateCarree())
-ax.stock_img()
-
-plt.scatter(list(city_coordinates_df['Longitude']),list(city_coordinates_df['Latitude']), color='red', marker = 'x', transform = ccrs.Geodetic(),)
-
-plt.title('Distribution of 500 random cities')
-plt.savefig('50 Cities in the world')
-plt.show()
-```
-
-
-![png](output_8_0.png)
+![png](output_6_0.png)
 
 
 
@@ -3200,11 +159,10 @@ try:
     print(current_weather['main']['temp'])
 except:
     print('HTTP Error: Not Found')
-    
 ```
 
-    Current temperature (F) for Vaini:
-    77.36
+    Current temperature (F) for Tiksi:
+    -21.92
 
 
 
@@ -3244,1006 +202,1006 @@ for index, row in city_coordinates_df.iterrows():
     
 ```
 
-    Retrieve Weather Parameters for: hobart,au
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=hobart
-    Retrieve Weather Parameters for: mareeba,au
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=mareeba
-    Retrieve Weather Parameters for: samalaeulu,ws
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=samalaeulu
-    Retrieve Weather Parameters for: pemangkat,id
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=pemangkat
-    Retrieve Weather Parameters for: male,mv
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=male
-    Retrieve Weather Parameters for: marawi,sd
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=marawi
-    Retrieve Weather Parameters for: tura,ru
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=tura
-    Retrieve Weather Parameters for: saint-augustin,ca
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=saint-augustin
-    Retrieve Weather Parameters for: tornio,fi
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=tornio
-    Retrieve Weather Parameters for: mayahi,ne
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=mayahi
-    Retrieve Weather Parameters for: nouadhibou,mr
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=nouadhibou
-    Retrieve Weather Parameters for: vila velha,br
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=vila%20velha
-    Retrieve Weather Parameters for: gushikawa,jp
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=gushikawa
-    Retrieve Weather Parameters for: krasnaya polyana,ru
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=krasnaya%20polyana
-    Retrieve Weather Parameters for: sorland,no
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=sorland
-    Retrieve Weather Parameters for: joaquim gomes,br
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=joaquim%20gomes
-    Retrieve Weather Parameters for: muros,es
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=muros
-    Retrieve Weather Parameters for: marzuq,ly
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=marzuq
-    Retrieve Weather Parameters for: chagda,ru
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=chagda
-    Retrieve Weather Parameters for: butaritari,ki
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=butaritari
-    Retrieve Weather Parameters for: caravelas,br
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=caravelas
-    Retrieve Weather Parameters for: ribeira grande,pt
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=ribeira%20grande
-    Retrieve Weather Parameters for: cabo san lucas,mx
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=cabo%20san%20lucas
-    Retrieve Weather Parameters for: verkhniy baskunchak,ru
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=verkhniy%20baskunchak
-    Retrieve Weather Parameters for: garowe,so
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=garowe
-    Retrieve Weather Parameters for: puerto plata,do
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=puerto%20plata
-    Retrieve Weather Parameters for: carnarvon,au
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=carnarvon
-    Retrieve Weather Parameters for: mayo,ca
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=mayo
-    Retrieve Weather Parameters for: nacala,mz
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=nacala
-    Retrieve Weather Parameters for: ponta do sol,cv
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=ponta%20do%20sol
-    Retrieve Weather Parameters for: alenquer,br
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=alenquer
-    Retrieve Weather Parameters for: ignalina,lt
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=ignalina
-    Retrieve Weather Parameters for: shenjiamen,cn
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=shenjiamen
-    Retrieve Weather Parameters for: ruatoria,nz
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=ruatoria
-    Retrieve Weather Parameters for: djambala,cg
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=djambala
-    Retrieve Weather Parameters for: pouebo,nc
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=pouebo
-    Retrieve Weather Parameters for: sentyabrskiy,ru
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=sentyabrskiy
-    Retrieve Weather Parameters for: chitral,pk
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=chitral
-    Retrieve Weather Parameters for: antalaha,mg
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=antalaha
-    Retrieve Weather Parameters for: peniche,pt
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=peniche
-    Retrieve Weather Parameters for: oriximina,br
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=oriximina
-    Retrieve Weather Parameters for: sarkand,kz
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=sarkand
-    Retrieve Weather Parameters for: buraydah,sa
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=buraydah
-    Retrieve Weather Parameters for: jamestown,sh
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=jamestown
-    Retrieve Weather Parameters for: sur,om
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=sur
-    Retrieve Weather Parameters for: lolua,tv
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=lolua
-    Retrieve Weather Parameters for: mount isa,au
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=mount%20isa
-    Retrieve Weather Parameters for: quebo,gw
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=quebo
-    Retrieve Weather Parameters for: mecca,sa
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=mecca
-    Retrieve Weather Parameters for: yaan,cn
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=yaan
-    Retrieve Weather Parameters for: palu,id
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=palu
-    Retrieve Weather Parameters for: punta umbria,es
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=punta%20umbria
-    Retrieve Weather Parameters for: rundu,na
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=rundu
-    Retrieve Weather Parameters for: mandiana,gn
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=mandiana
-    Retrieve Weather Parameters for: katsina,ng
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=katsina
-    Retrieve Weather Parameters for: hauge,no
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=hauge
-    Retrieve Weather Parameters for: geraldton,au
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=geraldton
-    Retrieve Weather Parameters for: pevek,ru
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=pevek
-    Retrieve Weather Parameters for: barentsburg,sj
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=barentsburg
-    Retrieve Weather Parameters for: coahuayana,mx
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=coahuayana
-    Retrieve Weather Parameters for: burhaniye,tr
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=burhaniye
-    Retrieve Weather Parameters for: petropavlovsk-kamchatskiy,ru
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=petropavlovsk-kamchatskiy
-    Retrieve Weather Parameters for: pisco,pe
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=pisco
-    Retrieve Weather Parameters for: vyazemskiy,ru
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=vyazemskiy
-    Retrieve Weather Parameters for: bandarbeyla,so
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=bandarbeyla
-    Retrieve Weather Parameters for: becerril,co
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=becerril
-    Retrieve Weather Parameters for: nizhnevartovsk,ru
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=nizhnevartovsk
-    Retrieve Weather Parameters for: saint-gaudens,fr
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=saint-gaudens
-    Retrieve Weather Parameters for: xuddur,so
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=xuddur
-    Retrieve Weather Parameters for: elda,es
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=elda
-    Retrieve Weather Parameters for: jibuti,dj
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=jibuti
-    Retrieve Weather Parameters for: kapaa,us
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=kapaa
-    Retrieve Weather Parameters for: vilhena,br
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=vilhena
-    Retrieve Weather Parameters for: port-gentil,ga
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=port-gentil
-    Retrieve Weather Parameters for: rodrigues alves,br
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=rodrigues%20alves
-    Retrieve Weather Parameters for: cururupu,br
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=cururupu
-    Retrieve Weather Parameters for: saint-prosper,ca
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=saint-prosper
-    Retrieve Weather Parameters for: half moon bay,us
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=half%20moon%20bay
-    Retrieve Weather Parameters for: port antonio,jm
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=port%20antonio
-    Retrieve Weather Parameters for: nogales,us
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=nogales
-    Retrieve Weather Parameters for: nantucket,us
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=nantucket
-    Retrieve Weather Parameters for: savannah bight,hn
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=savannah%20bight
-    Retrieve Weather Parameters for: guanica,us
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=guanica
-    Retrieve Weather Parameters for: sioux lookout,ca
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=sioux%20lookout
-    Retrieve Weather Parameters for: umzimvubu,za
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=umzimvubu
-    Retrieve Weather Parameters for: obera,ar
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=obera
-    Retrieve Weather Parameters for: eskasem,af
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=eskasem
-    Retrieve Weather Parameters for: palmer,us
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=palmer
-    Retrieve Weather Parameters for: praia,cv
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=praia
-    Retrieve Weather Parameters for: andra,ru
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=andra
-    Retrieve Weather Parameters for: havre-saint-pierre,ca
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=havre-saint-pierre
-    Retrieve Weather Parameters for: oistins,bb
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=oistins
-    Retrieve Weather Parameters for: rapallo,it
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=rapallo
-    Retrieve Weather Parameters for: zhuhai,cn
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=zhuhai
-    Retrieve Weather Parameters for: amparafaravola,mg
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=amparafaravola
-    Retrieve Weather Parameters for: biu,ng
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=biu
-    Retrieve Weather Parameters for: marsabit,ke
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=marsabit
-    Retrieve Weather Parameters for: evensk,ru
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=evensk
-    Retrieve Weather Parameters for: vardo,no
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=vardo
-    Retrieve Weather Parameters for: gwadar,pk
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=gwadar
-    Retrieve Weather Parameters for: mahebourg,mu
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=mahebourg
-    Retrieve Weather Parameters for: sapa,ph
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=sapa
-    Retrieve Weather Parameters for: bud,no
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=bud
-    Retrieve Weather Parameters for: mae sai,th
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=mae%20sai
-    Retrieve Weather Parameters for: beruwala,lk
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=beruwala
-    Retrieve Weather Parameters for: vao,nc
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=vao
-    Retrieve Weather Parameters for: acapulco,mx
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=acapulco
-    Retrieve Weather Parameters for: mount gambier,au
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=mount%20gambier
-    Retrieve Weather Parameters for: kunashak,ru
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=kunashak
-    Retrieve Weather Parameters for: tabiauea,ki
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=tabiauea
-    Retrieve Weather Parameters for: norman wells,ca
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=norman%20wells
-    Retrieve Weather Parameters for: windhoek,na
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=windhoek
-    Retrieve Weather Parameters for: lakes entrance,au
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=lakes%20entrance
-    Retrieve Weather Parameters for: mancio lima,br
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=mancio%20lima
-    Retrieve Weather Parameters for: kodinsk,ru
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=kodinsk
-    Retrieve Weather Parameters for: anadyr,ru
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=anadyr
-    Retrieve Weather Parameters for: flinders,au
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=flinders
-    Retrieve Weather Parameters for: kisaran,id
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=kisaran
-    Retrieve Weather Parameters for: lowestoft,gb
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=lowestoft
-    Retrieve Weather Parameters for: tchaourou,bj
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=tchaourou
-    Retrieve Weather Parameters for: rikitea,pf
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=rikitea
-    Retrieve Weather Parameters for: sheridan,us
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=sheridan
-    Retrieve Weather Parameters for: san rafael,ar
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=san%20rafael
-    Retrieve Weather Parameters for: utiroa,ki
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=utiroa
-    Retrieve Weather Parameters for: boysun,uz
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=boysun
-    Retrieve Weather Parameters for: aklavik,ca
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=aklavik
-    Retrieve Weather Parameters for: yellowknife,ca
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=yellowknife
-    Retrieve Weather Parameters for: puerto ayora,ec
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=puerto%20ayora
-    Retrieve Weather Parameters for: geresk,af
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=geresk
-    Retrieve Weather Parameters for: karmana,uz
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=karmana
-    Retrieve Weather Parameters for: pochutla,mx
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=pochutla
-    Retrieve Weather Parameters for: chute-aux-outardes,ca
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=chute-aux-outardes
-    Retrieve Weather Parameters for: alofi,nu
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=alofi
-    Retrieve Weather Parameters for: hervey bay,au
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=hervey%20bay
-    Retrieve Weather Parameters for: bambous virieux,mu
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=bambous%20virieux
-    Retrieve Weather Parameters for: phan rang,vn
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=phan%20rang
-    Retrieve Weather Parameters for: agde,fr
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=agde
-    Retrieve Weather Parameters for: sinnamary,gf
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=sinnamary
-    Retrieve Weather Parameters for: lagoa,pt
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=lagoa
-    Retrieve Weather Parameters for: korla,cn
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=korla
-    Retrieve Weather Parameters for: georgiyevka,kz
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=georgiyevka
-    Retrieve Weather Parameters for: bar harbor,us
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=bar%20harbor
-    Retrieve Weather Parameters for: yarensk,ru
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=yarensk
-    Retrieve Weather Parameters for: lavrentiya,ru
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=lavrentiya
-    Retrieve Weather Parameters for: dikson,ru
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=dikson
-    Retrieve Weather Parameters for: kaitangata,nz
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=kaitangata
-    Retrieve Weather Parameters for: sun valley,us
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=sun%20valley
-    Retrieve Weather Parameters for: fortuna,us
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=fortuna
-    Retrieve Weather Parameters for: sorong,id
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=sorong
-    Retrieve Weather Parameters for: mehamn,no
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=mehamn
-    Retrieve Weather Parameters for: birjand,ir
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=birjand
-    Retrieve Weather Parameters for: boyolangu,id
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=boyolangu
-    Retrieve Weather Parameters for: damaturu,ng
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=damaturu
-    Retrieve Weather Parameters for: gafargaon,bd
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=gafargaon
-    Retrieve Weather Parameters for: linxia,cn
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=linxia
-    Retrieve Weather Parameters for: khorramshahr,ir
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=khorramshahr
-    Retrieve Weather Parameters for: urumqi,cn
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=urumqi
-    Retrieve Weather Parameters for: kytmanovo,ru
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=kytmanovo
-    Retrieve Weather Parameters for: paita,pe
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=paita
-    Retrieve Weather Parameters for: maragogi,br
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=maragogi
-    Retrieve Weather Parameters for: tchibanga,ga
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=tchibanga
-    Retrieve Weather Parameters for: ebano,mx
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=ebano
-    Retrieve Weather Parameters for: sobolevo,ru
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=sobolevo
-    Retrieve Weather Parameters for: kismayo,so
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=kismayo
-    Retrieve Weather Parameters for: luderitz,na
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=luderitz
-    Retrieve Weather Parameters for: trelew,ar
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=trelew
-    Retrieve Weather Parameters for: salamanca,cl
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=salamanca
-    Retrieve Weather Parameters for: gornopravdinsk,ru
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=gornopravdinsk
-    Retrieve Weather Parameters for: cuamba,mz
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=cuamba
-    Retrieve Weather Parameters for: saint anthony,ca
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=saint%20anthony
-    Retrieve Weather Parameters for: deputatskiy,ru
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=deputatskiy
-    Retrieve Weather Parameters for: grindavik,is
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=grindavik
-    Retrieve Weather Parameters for: tucumcari,us
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=tucumcari
-    Retrieve Weather Parameters for: belushya guba,ru
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=belushya%20guba
-    Retrieve Weather Parameters for: kavaratti,in
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=kavaratti
-    Retrieve Weather Parameters for: san marcos de colon,hn
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=san%20marcos%20de%20colon
-    Retrieve Weather Parameters for: mount darwin,zw
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=mount%20darwin
-    Retrieve Weather Parameters for: nyurba,ru
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=nyurba
-    Retrieve Weather Parameters for: himora,et
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=himora
-    Retrieve Weather Parameters for: mahajanga,mg
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=mahajanga
-    Retrieve Weather Parameters for: zhangjiakou,cn
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=zhangjiakou
-    Retrieve Weather Parameters for: kruisfontein,za
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=kruisfontein
-    Retrieve Weather Parameters for: abha,sa
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=abha
-    Retrieve Weather Parameters for: kaeo,nz
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=kaeo
-    Retrieve Weather Parameters for: letlhakane,bw
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=letlhakane
-    Retrieve Weather Parameters for: tuktoyaktuk,ca
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=tuktoyaktuk
-    Retrieve Weather Parameters for: hettstedt,de
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=hettstedt
-    Retrieve Weather Parameters for: qasigiannguit,gl
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=qasigiannguit
-    Retrieve Weather Parameters for: meadow lake,ca
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=meadow%20lake
-    Retrieve Weather Parameters for: viedma,ar
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=viedma
-    Retrieve Weather Parameters for: torbay,ca
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=torbay
-    Retrieve Weather Parameters for: orlik,ru
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=orlik
-    Retrieve Weather Parameters for: vaini,to
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=vaini
-    Retrieve Weather Parameters for: verkhnevilyuysk,ru
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=verkhnevilyuysk
-    Retrieve Weather Parameters for: vostok,ru
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=vostok
-    Retrieve Weather Parameters for: taoudenni,ml
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=taoudenni
-    Retrieve Weather Parameters for: octeville,fr
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=octeville
-    Retrieve Weather Parameters for: tiksi,ru
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=tiksi
-    Retrieve Weather Parameters for: oranjemund,na
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=oranjemund
-    Retrieve Weather Parameters for: shirgaon,in
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=shirgaon
-    Retrieve Weather Parameters for: yurgamysh,ru
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=yurgamysh
-    Retrieve Weather Parameters for: les cayes,ht
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=les%20cayes
-    Retrieve Weather Parameters for: montepuez,mz
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=montepuez
-    Retrieve Weather Parameters for: labuan,my
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=labuan
-    Retrieve Weather Parameters for: serik,tr
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=serik
-    Retrieve Weather Parameters for: butterworth,za
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=butterworth
-    Retrieve Weather Parameters for: kaspiyskiy,ru
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=kaspiyskiy
-    Retrieve Weather Parameters for: isangel,vu
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=isangel
-    Retrieve Weather Parameters for: mosquera,co
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=mosquera
-    Retrieve Weather Parameters for: hofn,is
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=hofn
-    Retrieve Weather Parameters for: raudeberg,no
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=raudeberg
-    Retrieve Weather Parameters for: hermanus,za
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=hermanus
-    Retrieve Weather Parameters for: dunedin,nz
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=dunedin
-    Retrieve Weather Parameters for: waipawa,nz
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=waipawa
-    Retrieve Weather Parameters for: khash,ir
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=khash
-    Retrieve Weather Parameters for: birecik,tr
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=birecik
-    Retrieve Weather Parameters for: araxa,br
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=araxa
-    Retrieve Weather Parameters for: tumannyy,ru
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=tumannyy
-    Retrieve Weather Parameters for: tamiahua,mx
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=tamiahua
-    Retrieve Weather Parameters for: banff,ca
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=banff
-    Retrieve Weather Parameters for: dong hoi,vn
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=dong%20hoi
-    Retrieve Weather Parameters for: riberalta,bo
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=riberalta
-    Retrieve Weather Parameters for: tilsonburg,ca
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=tilsonburg
-    Retrieve Weather Parameters for: ambulu,id
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=ambulu
-    Retrieve Weather Parameters for: sola,vu
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=sola
-    Retrieve Weather Parameters for: eyrarbakki,is
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=eyrarbakki
-    Retrieve Weather Parameters for: boulder city,us
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=boulder%20city
-    Retrieve Weather Parameters for: neuquen,ar
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=neuquen
-    Retrieve Weather Parameters for: aasiaat,gl
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=aasiaat
-    Retrieve Weather Parameters for: ixtapa,mx
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=ixtapa
-    Retrieve Weather Parameters for: hailun,cn
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=hailun
-    Retrieve Weather Parameters for: watertown,us
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=watertown
-    Retrieve Weather Parameters for: cape town,za
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=cape%20town
-    Retrieve Weather Parameters for: exeter,gb
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=exeter
-    Retrieve Weather Parameters for: dongning,cn
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=dongning
-    Retrieve Weather Parameters for: fallon,us
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=fallon
-    Retrieve Weather Parameters for: coffs harbour,au
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=coffs%20harbour
-    Retrieve Weather Parameters for: north platte,us
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=north%20platte
-    Retrieve Weather Parameters for: thompson,ca
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=thompson
-    Retrieve Weather Parameters for: dicabisagan,ph
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=dicabisagan
-    Retrieve Weather Parameters for: horana,lk
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=horana
-    Retrieve Weather Parameters for: udomlya,ru
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=udomlya
-    Retrieve Weather Parameters for: barreiras,br
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=barreiras
-    Retrieve Weather Parameters for: mishelevka,ru
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=mishelevka
-    Retrieve Weather Parameters for: ayan,ru
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=ayan
-    Retrieve Weather Parameters for: ancud,cl
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=ancud
-    Retrieve Weather Parameters for: walvis bay,na
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=walvis%20bay
-    Retrieve Weather Parameters for: boa vista,br
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=boa%20vista
-    Retrieve Weather Parameters for: souillac,mu
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=souillac
-    Retrieve Weather Parameters for: chabahar,ir
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=chabahar
-    Retrieve Weather Parameters for: barrow,us
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=barrow
-    Retrieve Weather Parameters for: tsihombe,mg
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=tsihombe
-    Retrieve Weather Parameters for: vanavara,ru
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=vanavara
-    Retrieve Weather Parameters for: astipalaia,gr
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=astipalaia
-    Retrieve Weather Parameters for: arraial do cabo,br
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=arraial%20do%20cabo
-    Retrieve Weather Parameters for: saleaula,ws
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=saleaula
-    Retrieve Weather Parameters for: ledenice,cz
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=ledenice
-    Retrieve Weather Parameters for: kargasok,ru
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=kargasok
-    Retrieve Weather Parameters for: hilo,us
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=hilo
-    Retrieve Weather Parameters for: poitiers,fr
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=poitiers
-    Retrieve Weather Parameters for: bambanglipuro,id
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=bambanglipuro
-    Retrieve Weather Parameters for: saldanha,za
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=saldanha
-    Retrieve Weather Parameters for: san carlos de bariloche,ar
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=san%20carlos%20de%20bariloche
-    Retrieve Weather Parameters for: westport,nz
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=westport
-    Retrieve Weather Parameters for: belyy yar,ru
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=belyy%20yar
-    Retrieve Weather Parameters for: atasu,kz
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=atasu
-    Retrieve Weather Parameters for: bredasdorp,za
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=bredasdorp
-    Retrieve Weather Parameters for: west bay,ky
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=west%20bay
-    Retrieve Weather Parameters for: krutikha,ru
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=krutikha
-    Retrieve Weather Parameters for: kavieng,pg
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=kavieng
-    Retrieve Weather Parameters for: moba,cd
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=moba
-    Retrieve Weather Parameters for: maghama,mr
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=maghama
-    Retrieve Weather Parameters for: el dorado,co
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=el%20dorado
-    Retrieve Weather Parameters for: ntoum,ga
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=ntoum
-    Retrieve Weather Parameters for: poum,nc
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=poum
-    Retrieve Weather Parameters for: takapau,nz
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=takapau
-    Retrieve Weather Parameters for: basco,ph
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=basco
-    Retrieve Weather Parameters for: longyearbyen,sj
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=longyearbyen
-    Retrieve Weather Parameters for: attawapiskat,ca
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=attawapiskat
-    Retrieve Weather Parameters for: axim,gh
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=axim
-    Retrieve Weather Parameters for: tual,id
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=tual
-    Retrieve Weather Parameters for: yar-sale,ru
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=yar-sale
-    Retrieve Weather Parameters for: mercedes,ar
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=mercedes
-    Retrieve Weather Parameters for: tanout,ne
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=tanout
-    Retrieve Weather Parameters for: saskylakh,ru
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=saskylakh
-    Retrieve Weather Parameters for: cockburn town,tc
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=cockburn%20town
-    Retrieve Weather Parameters for: sokolo,ml
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=sokolo
-    Retrieve Weather Parameters for: coihaique,cl
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=coihaique
-    Retrieve Weather Parameters for: tuatapere,nz
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=tuatapere
-    Retrieve Weather Parameters for: ciudad bolivar,ve
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=ciudad%20bolivar
-    Retrieve Weather Parameters for: port elizabeth,za
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=port%20elizabeth
-    Retrieve Weather Parameters for: shangrao,cn
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=shangrao
-    Retrieve Weather Parameters for: sturgis,us
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=sturgis
-    Retrieve Weather Parameters for: powassan,ca
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=powassan
-    Retrieve Weather Parameters for: hamilton,us
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=hamilton
-    Retrieve Weather Parameters for: provideniya,ru
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=provideniya
-    Retrieve Weather Parameters for: det udom,th
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=det%20udom
-    Retrieve Weather Parameters for: vicuna,cl
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=vicuna
-    Retrieve Weather Parameters for: baiima,sl
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=baiima
-    Retrieve Weather Parameters for: myanaung,mm
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=myanaung
-    Retrieve Weather Parameters for: saint george,bm
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=saint%20george
-    Retrieve Weather Parameters for: chumikan,ru
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=chumikan
-    Retrieve Weather Parameters for: rudsar,ir
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=rudsar
-    Retrieve Weather Parameters for: tambun,id
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=tambun
-    Retrieve Weather Parameters for: avarua,ck
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=avarua
-    Retrieve Weather Parameters for: codrington,ag
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=codrington
-    Retrieve Weather Parameters for: iqaluit,ca
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=iqaluit
-    Retrieve Weather Parameters for: luena,ao
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=luena
-    Retrieve Weather Parameters for: mazagao,br
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=mazagao
-    Retrieve Weather Parameters for: vestmannaeyjar,is
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=vestmannaeyjar
-    Retrieve Weather Parameters for: beloha,mg
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=beloha
-    Retrieve Weather Parameters for: svetlogorsk,ru
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=svetlogorsk
-    Retrieve Weather Parameters for: caapucu,py
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=caapucu
-    Retrieve Weather Parameters for: vanimo,pg
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=vanimo
-    Retrieve Weather Parameters for: georgetown,sh
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=georgetown
-    Retrieve Weather Parameters for: sao joao da barra,br
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=sao%20joao%20da%20barra
-    Retrieve Weather Parameters for: palabuhanratu,id
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=palabuhanratu
-    Retrieve Weather Parameters for: rodbyhavn,dk
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=rodbyhavn
-    Retrieve Weather Parameters for: qaanaaq,gl
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=qaanaaq
-    Retrieve Weather Parameters for: lalsot,in
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=lalsot
-    Retrieve Weather Parameters for: januaria,br
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=januaria
-    Retrieve Weather Parameters for: piacabucu,br
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=piacabucu
-    Retrieve Weather Parameters for: tervel,bg
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=tervel
-    Retrieve Weather Parameters for: kirakira,sb
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=kirakira
-    Retrieve Weather Parameters for: mataura,pf
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=mataura
-    Retrieve Weather Parameters for: san quintin,mx
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=san%20quintin
-    Retrieve Weather Parameters for: fayaoue,nc
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=fayaoue
-    Retrieve Weather Parameters for: riyadh,sa
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=riyadh
-    Retrieve Weather Parameters for: bonthe,sl
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=bonthe
-    Retrieve Weather Parameters for: kamenskoye,ru
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=kamenskoye
-    Retrieve Weather Parameters for: amderma,ru
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=amderma
-    Retrieve Weather Parameters for: tabou,ci
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=tabou
-    Retrieve Weather Parameters for: marcona,pe
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=marcona
-    Retrieve Weather Parameters for: port moresby,pg
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=port%20moresby
-    Retrieve Weather Parameters for: komsomolskiy,ru
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=komsomolskiy
-    Retrieve Weather Parameters for: mbacke,sn
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=mbacke
-    Retrieve Weather Parameters for: arkhangelsk,ru
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=arkhangelsk
-    Retrieve Weather Parameters for: punta arenas,cl
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=punta%20arenas
-    Retrieve Weather Parameters for: altinopolis,br
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=altinopolis
-    Retrieve Weather Parameters for: khandyga,ru
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=khandyga
-    Retrieve Weather Parameters for: cherskiy,ru
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=cherskiy
-    Retrieve Weather Parameters for: atar,mr
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=atar
-    Retrieve Weather Parameters for: pospelikha,ru
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=pospelikha
-    Retrieve Weather Parameters for: galle,lk
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=galle
-    Retrieve Weather Parameters for: pokhara,np
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=pokhara
-    Retrieve Weather Parameters for: amga,ru
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=amga
-    Retrieve Weather Parameters for: ushuaia,ar
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=ushuaia
     Retrieve Weather Parameters for: saint-philippe,re
     http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=saint-philippe
-    Retrieve Weather Parameters for: lima,pe
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=lima
-    Retrieve Weather Parameters for: meiganga,cm
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=meiganga
-    Retrieve Weather Parameters for: parrita,cr
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=parrita
-    Retrieve Weather Parameters for: porto murtinho,br
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=porto%20murtinho
-    Retrieve Weather Parameters for: yulara,au
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=yulara
-    Retrieve Weather Parameters for: saint-joseph,re
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=saint-joseph
-    Retrieve Weather Parameters for: emerald,au
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=emerald
-    Retrieve Weather Parameters for: tucuman,ar
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=tucuman
-    Retrieve Weather Parameters for: namatanai,pg
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=namatanai
-    Retrieve Weather Parameters for: nabire,id
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=nabire
-    Retrieve Weather Parameters for: deming,us
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=deming
-    Retrieve Weather Parameters for: cayenne,gf
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=cayenne
-    Retrieve Weather Parameters for: pasighat,in
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=pasighat
-    Retrieve Weather Parameters for: port blair,in
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=port%20blair
-    Retrieve Weather Parameters for: karakendzha,tj
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=karakendzha
-    Retrieve Weather Parameters for: vila franca do campo,pt
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=vila%20franca%20do%20campo
-    Retrieve Weather Parameters for: jiroft,ir
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=jiroft
-    Retrieve Weather Parameters for: klaksvik,fo
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=klaksvik
-    Retrieve Weather Parameters for: katangli,ru
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=katangli
-    Retrieve Weather Parameters for: avera,pf
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=avera
-    Retrieve Weather Parameters for: shimoda,jp
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=shimoda
-    Retrieve Weather Parameters for: alice town,bs
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=alice%20town
-    Retrieve Weather Parameters for: conakry,gn
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=conakry
-    Retrieve Weather Parameters for: faanui,pf
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=faanui
-    Retrieve Weather Parameters for: porto novo,cv
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=porto%20novo
-    Retrieve Weather Parameters for: redlands,us
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=redlands
-    Retrieve Weather Parameters for: salinas,us
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=salinas
-    Retrieve Weather Parameters for: kang,bw
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=kang
-    Retrieve Weather Parameters for: labuhan,id
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=labuhan
-    Retrieve Weather Parameters for: ghugus,in
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=ghugus
-    Retrieve Weather Parameters for: voh,nc
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=voh
-    Retrieve Weather Parameters for: harper,lr
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=harper
-    Retrieve Weather Parameters for: oss,nl
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=oss
-    Retrieve Weather Parameters for: hailar,cn
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=hailar
-    Retrieve Weather Parameters for: severo-kurilsk,ru
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=severo-kurilsk
-    Retrieve Weather Parameters for: qiongshan,cn
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=qiongshan
-    Retrieve Weather Parameters for: komsomolets,kz
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=komsomolets
-    Retrieve Weather Parameters for: pangnirtung,ca
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=pangnirtung
-    Retrieve Weather Parameters for: zaigrayevo,ru
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=zaigrayevo
-    Retrieve Weather Parameters for: portage,us
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=portage
-    Retrieve Weather Parameters for: kajaani,fi
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=kajaani
-    Retrieve Weather Parameters for: puerto del rosario,es
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=puerto%20del%20rosario
-    Retrieve Weather Parameters for: ambon,id
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=ambon
-    Retrieve Weather Parameters for: daru,pg
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=daru
-    Retrieve Weather Parameters for: samusu,ws
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=samusu
-    Retrieve Weather Parameters for: mbengwi,cm
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=mbengwi
-    Retrieve Weather Parameters for: puri,in
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=puri
-    Retrieve Weather Parameters for: assiniboia,ca
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=assiniboia
-    Retrieve Weather Parameters for: poso,id
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=poso
-    Retrieve Weather Parameters for: tigil,ru
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=tigil
-    Retrieve Weather Parameters for: kahului,us
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=kahului
-    Retrieve Weather Parameters for: sassandra,ci
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=sassandra
-    Retrieve Weather Parameters for: aykhal,ru
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=aykhal
-    Retrieve Weather Parameters for: birao,cf
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=birao
-    Retrieve Weather Parameters for: jipijapa,ec
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=jipijapa
-    Retrieve Weather Parameters for: thunder bay,ca
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=thunder%20bay
-    Retrieve Weather Parameters for: chicama,pe
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=chicama
-    Retrieve Weather Parameters for: dakar,sn
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=dakar
-    Retrieve Weather Parameters for: upernavik,gl
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=upernavik
-    Retrieve Weather Parameters for: mar del plata,ar
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=mar%20del%20plata
-    Retrieve Weather Parameters for: plettenberg bay,za
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=plettenberg%20bay
-    Retrieve Weather Parameters for: rungata,ki
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=rungata
-    Retrieve Weather Parameters for: nargana,pa
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=nargana
-    Retrieve Weather Parameters for: meulaboh,id
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=meulaboh
-    Retrieve Weather Parameters for: salinopolis,br
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=salinopolis
-    Retrieve Weather Parameters for: florence,us
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=florence
-    Retrieve Weather Parameters for: nizhneyansk,ru
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=nizhneyansk
-    Retrieve Weather Parameters for: illoqqortoormiut,gl
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=illoqqortoormiut
-    Retrieve Weather Parameters for: castro,cl
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=castro
-    Retrieve Weather Parameters for: tombouctou,ml
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=tombouctou
-    Retrieve Weather Parameters for: chokurdakh,ru
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=chokurdakh
-    Retrieve Weather Parameters for: gazojak,tm
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=gazojak
-    Retrieve Weather Parameters for: petaling jaya,my
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=petaling%20jaya
-    Retrieve Weather Parameters for: tongliao,cn
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=tongliao
-    Retrieve Weather Parameters for: plainview,us
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=plainview
-    Retrieve Weather Parameters for: victoria,sc
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=victoria
-    Retrieve Weather Parameters for: yanahuanca,pe
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=yanahuanca
-    Retrieve Weather Parameters for: ahipara,nz
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=ahipara
-    Retrieve Weather Parameters for: new norfolk,au
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=new%20norfolk
-    Retrieve Weather Parameters for: rawson,ar
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=rawson
-    Retrieve Weather Parameters for: hambantota,lk
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=hambantota
-    Retrieve Weather Parameters for: broome,au
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=broome
-    Retrieve Weather Parameters for: araouane,ml
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=araouane
-    Retrieve Weather Parameters for: mackay,au
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=mackay
-    Retrieve Weather Parameters for: antofagasta,cl
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=antofagasta
-    Retrieve Weather Parameters for: gouyave,gd
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=gouyave
-    Retrieve Weather Parameters for: catamarca,ar
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=catamarca
-    Retrieve Weather Parameters for: inta,ru
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=inta
-    Retrieve Weather Parameters for: biak,id
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=biak
-    Retrieve Weather Parameters for: charters towers,au
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=charters%20towers
-    Retrieve Weather Parameters for: zhanakorgan,kz
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=zhanakorgan
-    Retrieve Weather Parameters for: cabra,ph
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=cabra
-    Retrieve Weather Parameters for: san bartolome de tirajana,es
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=san%20bartolome%20de%20tirajana
-    Retrieve Weather Parameters for: grand-santi,gf
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=grand-santi
-    Retrieve Weather Parameters for: clyde river,ca
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=clyde%20river
-    Retrieve Weather Parameters for: quatre cocos,mu
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=quatre%20cocos
-    Retrieve Weather Parameters for: ngawen,id
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=ngawen
-    Retrieve Weather Parameters for: bukama,cd
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=bukama
-    Retrieve Weather Parameters for: tyukhtet,ru
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=tyukhtet
-    Retrieve Weather Parameters for: pacific grove,us
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=pacific%20grove
-    Retrieve Weather Parameters for: sedelnikovo,ru
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=sedelnikovo
-    Retrieve Weather Parameters for: chuy,uy
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=chuy
-    Retrieve Weather Parameters for: anton lizardo,mx
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=anton%20lizardo
-    Retrieve Weather Parameters for: tupik,ru
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=tupik
-    Retrieve Weather Parameters for: hovd,mn
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=hovd
-    Retrieve Weather Parameters for: srem,pl
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=srem
-    Retrieve Weather Parameters for: sao filipe,cv
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=sao%20filipe
-    Retrieve Weather Parameters for: kaya,bf
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=kaya
-    Retrieve Weather Parameters for: east london,za
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=east%20london
-    Retrieve Weather Parameters for: richards bay,za
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=richards%20bay
-    Retrieve Weather Parameters for: felidhoo,mv
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=felidhoo
-    Retrieve Weather Parameters for: kribi,cm
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=kribi
-    Retrieve Weather Parameters for: bengkulu,id
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=bengkulu
-    Retrieve Weather Parameters for: teguldet,ru
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=teguldet
-    Retrieve Weather Parameters for: asau,tv
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=asau
-    Retrieve Weather Parameters for: nieuw amsterdam,sr
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=nieuw%20amsterdam
-    Retrieve Weather Parameters for: herten,de
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=herten
-    Retrieve Weather Parameters for: karamea,nz
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=karamea
-    Retrieve Weather Parameters for: ilulissat,gl
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=ilulissat
-    Retrieve Weather Parameters for: pasni,pk
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=pasni
-    Retrieve Weather Parameters for: constitucion,mx
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=constitucion
-    Retrieve Weather Parameters for: leningradskiy,ru
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=leningradskiy
-    Retrieve Weather Parameters for: longlac,ca
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=longlac
-    Retrieve Weather Parameters for: liwale,tz
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=liwale
-    Retrieve Weather Parameters for: aquiraz,br
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=aquiraz
-    Retrieve Weather Parameters for: gongzhuling,cn
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=gongzhuling
-    Retrieve Weather Parameters for: kushima,jp
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=kushima
-    Retrieve Weather Parameters for: douentza,ml
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=douentza
-    Retrieve Weather Parameters for: along,in
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=along
-    Retrieve Weather Parameters for: ohara,jp
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=ohara
-    Retrieve Weather Parameters for: chapais,ca
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=chapais
-    Retrieve Weather Parameters for: kodiak,us
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=kodiak
-    Retrieve Weather Parameters for: khatanga,ru
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=khatanga
-    Retrieve Weather Parameters for: bluff,nz
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=bluff
-    Retrieve Weather Parameters for: bethel,us
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=bethel
-    Retrieve Weather Parameters for: cay,tr
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=cay
-    Retrieve Weather Parameters for: taolanaro,mg
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=taolanaro
-    Retrieve Weather Parameters for: najran,sa
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=najran
-    Retrieve Weather Parameters for: guerrero negro,mx
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=guerrero%20negro
-    Retrieve Weather Parameters for: mokhsogollokh,ru
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=mokhsogollokh
-    Retrieve Weather Parameters for: olinda,br
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=olinda
-    Retrieve Weather Parameters for: srednekolymsk,ru
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=srednekolymsk
-    Retrieve Weather Parameters for: bilibino,ru
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=bilibino
+    Retrieve Weather Parameters for: inuvik,ca
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=inuvik
     Retrieve Weather Parameters for: kudahuvadhoo,mv
     http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=kudahuvadhoo
-    Retrieve Weather Parameters for: omboue,ga
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=omboue
-    Retrieve Weather Parameters for: maniitsoq,gl
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=maniitsoq
+    Retrieve Weather Parameters for: gizo,sb
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=gizo
+    Retrieve Weather Parameters for: kalundborg,dk
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=kalundborg
+    Retrieve Weather Parameters for: mount isa,au
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=mount%20isa
+    Retrieve Weather Parameters for: hof,no
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=hof
+    Retrieve Weather Parameters for: popondetta,pg
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=popondetta
+    Retrieve Weather Parameters for: port lincoln,au
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=port%20lincoln
+    Retrieve Weather Parameters for: tokur,ru
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=tokur
+    Retrieve Weather Parameters for: tarakan,id
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=tarakan
+    Retrieve Weather Parameters for: abha,sa
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=abha
+    Retrieve Weather Parameters for: banmo,mm
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=banmo
+    Retrieve Weather Parameters for: orotukan,ru
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=orotukan
+    Retrieve Weather Parameters for: peniche,pt
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=peniche
+    Retrieve Weather Parameters for: saint-augustin,ca
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=saint-augustin
+    Retrieve Weather Parameters for: esik,kz
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=esik
+    Retrieve Weather Parameters for: huarmey,pe
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=huarmey
+    Retrieve Weather Parameters for: barrow,us
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=barrow
+    Retrieve Weather Parameters for: vaini,to
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=vaini
+    Retrieve Weather Parameters for: lorengau,pg
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=lorengau
+    Retrieve Weather Parameters for: lasa,cn
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=lasa
+    Retrieve Weather Parameters for: upernavik,gl
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=upernavik
+    Retrieve Weather Parameters for: hokitika,nz
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=hokitika
+    Retrieve Weather Parameters for: nata,bw
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=nata
+    Retrieve Weather Parameters for: esperance,au
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=esperance
+    Retrieve Weather Parameters for: kalmunai,lk
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=kalmunai
+    Retrieve Weather Parameters for: bagenalstown,ie
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=bagenalstown
+    Retrieve Weather Parameters for: mindyak,ru
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=mindyak
+    Retrieve Weather Parameters for: kuytun,cn
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=kuytun
+    Retrieve Weather Parameters for: cape town,za
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=cape%20town
+    Retrieve Weather Parameters for: agirish,ru
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=agirish
+    Retrieve Weather Parameters for: verkhoturye,ru
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=verkhoturye
+    Retrieve Weather Parameters for: taos,us
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=taos
+    Retrieve Weather Parameters for: provideniya,ru
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=provideniya
+    Retrieve Weather Parameters for: torbay,ca
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=torbay
+    Retrieve Weather Parameters for: beringovskiy,ru
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=beringovskiy
+    Retrieve Weather Parameters for: aripuana,br
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=aripuana
+    Retrieve Weather Parameters for: rio grande,br
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=rio%20grande
+    Retrieve Weather Parameters for: punta cardon,ve
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=punta%20cardon
+    Retrieve Weather Parameters for: qasigiannguit,gl
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=qasigiannguit
     Retrieve Weather Parameters for: vaitupu,wf
     http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=vaitupu
+    Retrieve Weather Parameters for: gunjur,gm
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=gunjur
+    Retrieve Weather Parameters for: belmonte,br
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=belmonte
+    Retrieve Weather Parameters for: iqaluit,ca
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=iqaluit
+    Retrieve Weather Parameters for: arraial do cabo,br
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=arraial%20do%20cabo
+    Retrieve Weather Parameters for: back mountain,us
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=back%20mountain
+    Retrieve Weather Parameters for: bosaso,so
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=bosaso
+    Retrieve Weather Parameters for: bac lieu,vn
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=bac%20lieu
+    Retrieve Weather Parameters for: richards bay,za
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=richards%20bay
+    Retrieve Weather Parameters for: batagay-alyta,ru
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=batagay-alyta
+    Retrieve Weather Parameters for: tsihombe,mg
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=tsihombe
+    Retrieve Weather Parameters for: kovdor,ru
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=kovdor
+    Retrieve Weather Parameters for: pisco,pe
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=pisco
+    Retrieve Weather Parameters for: cam ranh,vn
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=cam%20ranh
+    Retrieve Weather Parameters for: barawe,so
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=barawe
+    Retrieve Weather Parameters for: pevek,ru
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=pevek
+    Retrieve Weather Parameters for: okhotsk,ru
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=okhotsk
+    Retrieve Weather Parameters for: amga,ru
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=amga
+    Retrieve Weather Parameters for: verkhnevilyuysk,ru
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=verkhnevilyuysk
+    Retrieve Weather Parameters for: kahului,us
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=kahului
+    Retrieve Weather Parameters for: turukhansk,ru
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=turukhansk
+    Retrieve Weather Parameters for: kraskino,ru
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=kraskino
+    Retrieve Weather Parameters for: nuristan,af
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=nuristan
+    Retrieve Weather Parameters for: yulara,au
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=yulara
+    Retrieve Weather Parameters for: grand river south east,mu
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=grand%20river%20south%20east
+    Retrieve Weather Parameters for: atuona,pf
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=atuona
+    Retrieve Weather Parameters for: ringkobing,dk
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=ringkobing
+    Retrieve Weather Parameters for: aksarayskiy,ru
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=aksarayskiy
+    Retrieve Weather Parameters for: oussouye,sn
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=oussouye
+    Retrieve Weather Parameters for: krasnoselkup,ru
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=krasnoselkup
+    Retrieve Weather Parameters for: bubaque,gw
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=bubaque
+    Retrieve Weather Parameters for: ayr,au
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=ayr
+    Retrieve Weather Parameters for: nizhniy kuranakh,ru
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=nizhniy%20kuranakh
+    Retrieve Weather Parameters for: dunedin,nz
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=dunedin
+    Retrieve Weather Parameters for: benguela,ao
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=benguela
+    Retrieve Weather Parameters for: ilulissat,gl
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=ilulissat
+    Retrieve Weather Parameters for: rungata,ki
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=rungata
+    Retrieve Weather Parameters for: ust-kamchatsk,ru
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=ust-kamchatsk
+    Retrieve Weather Parameters for: boende,cd
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=boende
+    Retrieve Weather Parameters for: vila franca do campo,pt
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=vila%20franca%20do%20campo
+    Retrieve Weather Parameters for: khonuu,ru
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=khonuu
+    Retrieve Weather Parameters for: black river,jm
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=black%20river
+    Retrieve Weather Parameters for: kananga,cd
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=kananga
+    Retrieve Weather Parameters for: sao felix do xingu,br
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=sao%20felix%20do%20xingu
+    Retrieve Weather Parameters for: arbroath,gb
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=arbroath
+    Retrieve Weather Parameters for: laguna de perlas,ni
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=laguna%20de%20perlas
+    Retrieve Weather Parameters for: muravlenko,ru
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=muravlenko
+    Retrieve Weather Parameters for: the valley,ai
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=the%20valley
+    Retrieve Weather Parameters for: nanton,ca
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=nanton
+    Retrieve Weather Parameters for: havoysund,no
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=havoysund
+    Retrieve Weather Parameters for: samusu,ws
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=samusu
+    Retrieve Weather Parameters for: xiangxiang,cn
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=xiangxiang
+    Retrieve Weather Parameters for: farafangana,mg
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=farafangana
+    Retrieve Weather Parameters for: amderma,ru
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=amderma
+    Retrieve Weather Parameters for: krasnaya gora,ru
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=krasnaya%20gora
+    Retrieve Weather Parameters for: honningsvag,no
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=honningsvag
+    Retrieve Weather Parameters for: galle,lk
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=galle
+    Retrieve Weather Parameters for: barcelos,br
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=barcelos
+    Retrieve Weather Parameters for: luderitz,na
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=luderitz
+    Retrieve Weather Parameters for: kemijarvi,fi
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=kemijarvi
+    Retrieve Weather Parameters for: yangjiang,cn
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=yangjiang
+    Retrieve Weather Parameters for: buala,sb
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=buala
+    Retrieve Weather Parameters for: alakurtti,ru
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=alakurtti
+    Retrieve Weather Parameters for: coahuayana,mx
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=coahuayana
+    Retrieve Weather Parameters for: san patricio,mx
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=san%20patricio
+    Retrieve Weather Parameters for: hilo,us
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=hilo
+    Retrieve Weather Parameters for: chuy,uy
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=chuy
+    Retrieve Weather Parameters for: taltal,cl
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=taltal
+    Retrieve Weather Parameters for: formiga,br
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=formiga
+    Retrieve Weather Parameters for: tiarei,pf
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=tiarei
+    Retrieve Weather Parameters for: general roca,ar
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=general%20roca
+    Retrieve Weather Parameters for: dolbeau,ca
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=dolbeau
+    Retrieve Weather Parameters for: shahrud,ir
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=shahrud
+    Retrieve Weather Parameters for: hauterive,ca
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=hauterive
+    Retrieve Weather Parameters for: sitka,us
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=sitka
+    Retrieve Weather Parameters for: yellowknife,ca
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=yellowknife
+    Retrieve Weather Parameters for: geraldton,au
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=geraldton
+    Retrieve Weather Parameters for: kaputa,zm
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=kaputa
+    Retrieve Weather Parameters for: zaysan,kz
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=zaysan
+    Retrieve Weather Parameters for: kurinjippadi,in
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=kurinjippadi
+    Retrieve Weather Parameters for: zapolyarnyy,ru
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=zapolyarnyy
+    Retrieve Weather Parameters for: hervey bay,au
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=hervey%20bay
+    Retrieve Weather Parameters for: grand gaube,mu
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=grand%20gaube
+    Retrieve Weather Parameters for: saint-joseph,re
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=saint-joseph
+    Retrieve Weather Parameters for: rabak,sd
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=rabak
+    Retrieve Weather Parameters for: kiunga,pg
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=kiunga
+    Retrieve Weather Parameters for: bacolod,ph
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=bacolod
+    Retrieve Weather Parameters for: kapaa,us
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=kapaa
+    Retrieve Weather Parameters for: northport,us
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=northport
+    Retrieve Weather Parameters for: khandyga,ru
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=khandyga
+    Retrieve Weather Parameters for: cumaribo,co
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=cumaribo
+    Retrieve Weather Parameters for: teya,ru
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=teya
+    Retrieve Weather Parameters for: yenagoa,ng
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=yenagoa
+    Retrieve Weather Parameters for: candawaga,ph
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=candawaga
+    Retrieve Weather Parameters for: roros,no
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=roros
+    Retrieve Weather Parameters for: lolua,tv
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=lolua
+    Retrieve Weather Parameters for: gorontalo,id
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=gorontalo
+    Retrieve Weather Parameters for: umzimvubu,za
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=umzimvubu
+    Retrieve Weather Parameters for: ramnagar,in
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=ramnagar
+    Retrieve Weather Parameters for: coihaique,cl
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=coihaique
+    Retrieve Weather Parameters for: sept-iles,ca
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=sept-iles
+    Retrieve Weather Parameters for: cayenne,gf
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=cayenne
+    Retrieve Weather Parameters for: akdepe,tm
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=akdepe
+    Retrieve Weather Parameters for: gencsapati,hu
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=gencsapati
+    Retrieve Weather Parameters for: vardo,no
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=vardo
+    Retrieve Weather Parameters for: kirakira,sb
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=kirakira
+    Retrieve Weather Parameters for: jawar,in
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=jawar
+    Retrieve Weather Parameters for: luganville,vu
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=luganville
+    Retrieve Weather Parameters for: cabra,ph
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=cabra
+    Retrieve Weather Parameters for: santa lucia,es
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=santa%20lucia
+    Retrieve Weather Parameters for: saldanha,za
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=saldanha
+    Retrieve Weather Parameters for: zhigalovo,ru
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=zhigalovo
+    Retrieve Weather Parameters for: aginskoye,ru
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=aginskoye
+    Retrieve Weather Parameters for: ozgon,kg
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=ozgon
+    Retrieve Weather Parameters for: toliary,mg
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=toliary
+    Retrieve Weather Parameters for: malinovoye ozero,ru
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=malinovoye%20ozero
+    Retrieve Weather Parameters for: mandalgovi,mn
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=mandalgovi
+    Retrieve Weather Parameters for: adeje,es
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=adeje
+    Retrieve Weather Parameters for: lakatoro,vu
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=lakatoro
+    Retrieve Weather Parameters for: taoudenni,ml
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=taoudenni
+    Retrieve Weather Parameters for: hendijan,ir
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=hendijan
+    Retrieve Weather Parameters for: bethel,us
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=bethel
+    Retrieve Weather Parameters for: angra,pt
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=angra
+    Retrieve Weather Parameters for: ambunti,pg
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=ambunti
+    Retrieve Weather Parameters for: soe,id
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=soe
+    Retrieve Weather Parameters for: nizhneyansk,ru
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=nizhneyansk
+    Retrieve Weather Parameters for: isiro,cd
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=isiro
     Retrieve Weather Parameters for: hithadhoo,mv
     http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=hithadhoo
-    Retrieve Weather Parameters for: ostrovnoy,ru
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=ostrovnoy
+    Retrieve Weather Parameters for: attawapiskat,ca
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=attawapiskat
+    Retrieve Weather Parameters for: ginda,er
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=ginda
+    Retrieve Weather Parameters for: road town,vg
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=road%20town
+    Retrieve Weather Parameters for: skjervoy,no
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=skjervoy
+    Retrieve Weather Parameters for: bud,no
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=bud
+    Retrieve Weather Parameters for: araouane,ml
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=araouane
+    Retrieve Weather Parameters for: hay river,ca
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=hay%20river
+    Retrieve Weather Parameters for: nabire,id
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=nabire
+    Retrieve Weather Parameters for: hue,vn
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=hue
+    Retrieve Weather Parameters for: kuopio,fi
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=kuopio
+    Retrieve Weather Parameters for: ponta do sol,cv
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=ponta%20do%20sol
+    Retrieve Weather Parameters for: zatoka,ua
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=zatoka
+    Retrieve Weather Parameters for: beipiao,cn
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=beipiao
+    Retrieve Weather Parameters for: souillac,mu
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=souillac
+    Retrieve Weather Parameters for: cody,us
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=cody
+    Retrieve Weather Parameters for: sungaipenuh,id
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=sungaipenuh
+    Retrieve Weather Parameters for: kangaatsiaq,gl
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=kangaatsiaq
+    Retrieve Weather Parameters for: kununurra,au
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=kununurra
+    Retrieve Weather Parameters for: uruzgan,af
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=uruzgan
+    Retrieve Weather Parameters for: burica,pa
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=burica
+    Retrieve Weather Parameters for: nanortalik,gl
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=nanortalik
+    Retrieve Weather Parameters for: cidreira,br
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=cidreira
+    Retrieve Weather Parameters for: el alto,pe
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=el%20alto
+    Retrieve Weather Parameters for: formosa,ar
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=formosa
+    Retrieve Weather Parameters for: airai,pw
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=airai
+    Retrieve Weather Parameters for: buraydah,sa
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=buraydah
+    Retrieve Weather Parameters for: akyab,mm
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=akyab
+    Retrieve Weather Parameters for: ajka,hu
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=ajka
+    Retrieve Weather Parameters for: harsin,ir
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=harsin
+    Retrieve Weather Parameters for: lompoc,us
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=lompoc
+    Retrieve Weather Parameters for: avarua,ck
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=avarua
+    Retrieve Weather Parameters for: dandong,cn
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=dandong
+    Retrieve Weather Parameters for: high level,ca
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=high%20level
+    Retrieve Weather Parameters for: sztum,pl
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=sztum
+    Retrieve Weather Parameters for: louisbourg,ca
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=louisbourg
+    Retrieve Weather Parameters for: tilichiki,ru
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=tilichiki
+    Retrieve Weather Parameters for: longlac,ca
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=longlac
+    Retrieve Weather Parameters for: neiafu,to
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=neiafu
+    Retrieve Weather Parameters for: molokovo,ru
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=molokovo
+    Retrieve Weather Parameters for: tiksi,ru
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=tiksi
+    Retrieve Weather Parameters for: kruisfontein,za
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=kruisfontein
+    Retrieve Weather Parameters for: dinsor,so
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=dinsor
+    Retrieve Weather Parameters for: daru,pg
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=daru
+    Retrieve Weather Parameters for: minab,ir
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=minab
+    Retrieve Weather Parameters for: ormara,pk
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=ormara
+    Retrieve Weather Parameters for: grand baie,mu
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=grand%20baie
+    Retrieve Weather Parameters for: santiago,pe
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=santiago
+    Retrieve Weather Parameters for: elesbao veloso,br
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=elesbao%20veloso
+    Retrieve Weather Parameters for: dekoa,cf
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=dekoa
+    Retrieve Weather Parameters for: garowe,so
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=garowe
+    Retrieve Weather Parameters for: tuatapere,nz
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=tuatapere
+    Retrieve Weather Parameters for: saint-georges,gf
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=saint-georges
+    Retrieve Weather Parameters for: dikson,ru
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=dikson
+    Retrieve Weather Parameters for: tautira,pf
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=tautira
+    Retrieve Weather Parameters for: lufilufi,ws
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=lufilufi
+    Retrieve Weather Parameters for: bambanglipuro,id
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=bambanglipuro
+    Retrieve Weather Parameters for: mitsamiouli,km
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=mitsamiouli
+    Retrieve Weather Parameters for: mutsamudu,km
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=mutsamudu
+    Retrieve Weather Parameters for: douentza,ml
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=douentza
+    Retrieve Weather Parameters for: chernyshevskiy,ru
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=chernyshevskiy
+    Retrieve Weather Parameters for: maldonado,uy
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=maldonado
+    Retrieve Weather Parameters for: bulqize,al
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=bulqize
+    Retrieve Weather Parameters for: mahebourg,mu
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=mahebourg
+    Retrieve Weather Parameters for: aksarka,ru
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=aksarka
+    Retrieve Weather Parameters for: portland,au
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=portland
+    Retrieve Weather Parameters for: mar del plata,ar
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=mar%20del%20plata
+    Retrieve Weather Parameters for: pelotas,br
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=pelotas
+    Retrieve Weather Parameters for: katsuura,jp
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=katsuura
+    Retrieve Weather Parameters for: oktyabrskiy,ru
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=oktyabrskiy
+    Retrieve Weather Parameters for: oregon city,us
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=oregon%20city
+    Retrieve Weather Parameters for: sur,om
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=sur
+    Retrieve Weather Parameters for: san-pedro,ci
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=san-pedro
+    Retrieve Weather Parameters for: naze,jp
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=naze
+    Retrieve Weather Parameters for: nuuk,gl
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=nuuk
+    Retrieve Weather Parameters for: clyde river,ca
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=clyde%20river
+    Retrieve Weather Parameters for: fountain hills,us
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=fountain%20hills
+    Retrieve Weather Parameters for: marcona,pe
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=marcona
+    Retrieve Weather Parameters for: bursol,ru
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=bursol
+    Retrieve Weather Parameters for: port-cartier,ca
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=port-cartier
+    Retrieve Weather Parameters for: pauini,br
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=pauini
+    Retrieve Weather Parameters for: nara,ml
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=nara
+    Retrieve Weather Parameters for: rocha,uy
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=rocha
+    Retrieve Weather Parameters for: saint george,bm
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=saint%20george
+    Retrieve Weather Parameters for: abu kamal,sy
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=abu%20kamal
+    Retrieve Weather Parameters for: mayumba,ga
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=mayumba
+    Retrieve Weather Parameters for: vikhorevka,ru
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=vikhorevka
+    Retrieve Weather Parameters for: katangli,ru
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=katangli
+    Retrieve Weather Parameters for: alofi,nu
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=alofi
+    Retrieve Weather Parameters for: cockburn town,tc
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=cockburn%20town
+    Retrieve Weather Parameters for: udachnyy,ru
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=udachnyy
+    Retrieve Weather Parameters for: salina,us
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=salina
+    Retrieve Weather Parameters for: victoria,sc
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=victoria
+    Retrieve Weather Parameters for: resistencia,ar
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=resistencia
+    Retrieve Weather Parameters for: moiyabana,bw
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=moiyabana
+    Retrieve Weather Parameters for: georgiyevka,kz
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=georgiyevka
+    Retrieve Weather Parameters for: puerto leguizamo,co
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=puerto%20leguizamo
+    Retrieve Weather Parameters for: hambantota,lk
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=hambantota
+    Retrieve Weather Parameters for: leningradskiy,ru
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=leningradskiy
+    Retrieve Weather Parameters for: husavik,is
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=husavik
+    Retrieve Weather Parameters for: vao,nc
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=vao
+    Retrieve Weather Parameters for: ixtapa,mx
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=ixtapa
+    Retrieve Weather Parameters for: illoqqortoormiut,gl
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=illoqqortoormiut
+    Retrieve Weather Parameters for: byron bay,au
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=byron%20bay
+    Retrieve Weather Parameters for: praia da vitoria,pt
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=praia%20da%20vitoria
+    Retrieve Weather Parameters for: lobatse,bw
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=lobatse
+    Retrieve Weather Parameters for: port alfred,za
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=port%20alfred
+    Retrieve Weather Parameters for: lanzhou,cn
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=lanzhou
+    Retrieve Weather Parameters for: kodiak,us
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=kodiak
+    Retrieve Weather Parameters for: senanga,zm
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=senanga
+    Retrieve Weather Parameters for: san jeronimo,mx
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=san%20jeronimo
+    Retrieve Weather Parameters for: lata,sb
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=lata
+    Retrieve Weather Parameters for: elban,ru
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=elban
+    Retrieve Weather Parameters for: petit goave,ht
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=petit%20goave
+    Retrieve Weather Parameters for: bluff,nz
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=bluff
+    Retrieve Weather Parameters for: ukiah,us
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=ukiah
+    Retrieve Weather Parameters for: kenai,us
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=kenai
+    Retrieve Weather Parameters for: umea,se
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=umea
+    Retrieve Weather Parameters for: jambusar,in
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=jambusar
+    Retrieve Weather Parameters for: masingbi,sl
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=masingbi
+    Retrieve Weather Parameters for: half moon bay,us
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=half%20moon%20bay
+    Retrieve Weather Parameters for: bambous virieux,mu
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=bambous%20virieux
+    Retrieve Weather Parameters for: el tocuyo,ve
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=el%20tocuyo
+    Retrieve Weather Parameters for: codrington,ag
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=codrington
+    Retrieve Weather Parameters for: kishi,ng
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=kishi
+    Retrieve Weather Parameters for: severo-kurilsk,ru
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=severo-kurilsk
+    Retrieve Weather Parameters for: xining,cn
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=xining
+    Retrieve Weather Parameters for: cherskiy,ru
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=cherskiy
+    Retrieve Weather Parameters for: shizunai,jp
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=shizunai
+    Retrieve Weather Parameters for: berlevag,no
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=berlevag
+    Retrieve Weather Parameters for: litovko,ru
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=litovko
+    Retrieve Weather Parameters for: basco,ph
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=basco
+    Retrieve Weather Parameters for: ormond beach,us
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=ormond%20beach
+    Retrieve Weather Parameters for: aklavik,ca
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=aklavik
+    Retrieve Weather Parameters for: divnoye,ru
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=divnoye
+    Retrieve Weather Parameters for: williston,us
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=williston
+    Retrieve Weather Parameters for: qaanaaq,gl
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=qaanaaq
+    Retrieve Weather Parameters for: adelaide,za
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=adelaide
+    Retrieve Weather Parameters for: tasiilaq,gl
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=tasiilaq
+    Retrieve Weather Parameters for: saleaula,ws
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=saleaula
+    Retrieve Weather Parameters for: naryan-mar,ru
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=naryan-mar
+    Retrieve Weather Parameters for: muhos,fi
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=muhos
+    Retrieve Weather Parameters for: nome,us
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=nome
+    Retrieve Weather Parameters for: sudogda,ru
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=sudogda
+    Retrieve Weather Parameters for: kimbe,pg
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=kimbe
+    Retrieve Weather Parameters for: morant bay,jm
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=morant%20bay
+    Retrieve Weather Parameters for: klaksvik,fo
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=klaksvik
+    Retrieve Weather Parameters for: gobabis,na
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=gobabis
+    Retrieve Weather Parameters for: los llanos de aridane,es
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=los%20llanos%20de%20aridane
+    Retrieve Weather Parameters for: santa rosa,ar
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=santa%20rosa
+    Retrieve Weather Parameters for: krechevitsy,ru
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=krechevitsy
+    Retrieve Weather Parameters for: labuhan,id
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=labuhan
+    Retrieve Weather Parameters for: lavrentiya,ru
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=lavrentiya
+    Retrieve Weather Parameters for: satitoa,ws
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=satitoa
+    Retrieve Weather Parameters for: homer,us
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=homer
+    Retrieve Weather Parameters for: peterlee,gb
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=peterlee
+    Retrieve Weather Parameters for: albany,au
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=albany
+    Retrieve Weather Parameters for: anchorage,us
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=anchorage
+    Retrieve Weather Parameters for: bintulu,my
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=bintulu
+    Retrieve Weather Parameters for: verkhnyaya toyma,ru
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=verkhnyaya%20toyma
+    Retrieve Weather Parameters for: zambezi,zm
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=zambezi
+    Retrieve Weather Parameters for: hermanus,za
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=hermanus
+    Retrieve Weather Parameters for: sentyabrskiy,ru
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=sentyabrskiy
+    Retrieve Weather Parameters for: kyabe,td
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=kyabe
+    Retrieve Weather Parameters for: mandan,us
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=mandan
+    Retrieve Weather Parameters for: damara,cf
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=damara
+    Retrieve Weather Parameters for: wyszkow,pl
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=wyszkow
+    Retrieve Weather Parameters for: la ronge,ca
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=la%20ronge
+    Retrieve Weather Parameters for: georgetown,sh
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=georgetown
+    Retrieve Weather Parameters for: maltahohe,na
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=maltahohe
+    Retrieve Weather Parameters for: yongchang,cn
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=yongchang
+    Retrieve Weather Parameters for: namatanai,pg
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=namatanai
+    Retrieve Weather Parameters for: fukue,jp
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=fukue
+    Retrieve Weather Parameters for: ribeira grande,pt
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=ribeira%20grande
+    Retrieve Weather Parameters for: fare,pf
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=fare
+    Retrieve Weather Parameters for: dobryanka,ru
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=dobryanka
+    Retrieve Weather Parameters for: longyearbyen,sj
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=longyearbyen
+    Retrieve Weather Parameters for: haapiti,pf
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=haapiti
+    Retrieve Weather Parameters for: karratha,au
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=karratha
+    Retrieve Weather Parameters for: margate,za
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=margate
+    Retrieve Weather Parameters for: madang,pg
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=madang
     Retrieve Weather Parameters for: olafsvik,is
     http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=olafsvik
-    Retrieve Weather Parameters for: tubruq,ly
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=tubruq
-    Retrieve Weather Parameters for: beihai,cn
-    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=beihai
+    Retrieve Weather Parameters for: tambul,sd
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=tambul
+    Retrieve Weather Parameters for: hobart,au
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=hobart
+    Retrieve Weather Parameters for: price,us
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=price
+    Retrieve Weather Parameters for: rampura,in
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=rampura
+    Retrieve Weather Parameters for: zhuhai,cn
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=zhuhai
+    Retrieve Weather Parameters for: key west,us
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=key%20west
+    Retrieve Weather Parameters for: narsaq,gl
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=narsaq
+    Retrieve Weather Parameters for: mednogorskiy,ru
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=mednogorskiy
+    Retrieve Weather Parameters for: lumeje,ao
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=lumeje
+    Retrieve Weather Parameters for: nalut,ly
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=nalut
+    Retrieve Weather Parameters for: norman wells,ca
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=norman%20wells
+    Retrieve Weather Parameters for: sao filipe,cv
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=sao%20filipe
+    Retrieve Weather Parameters for: ullapool,gb
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=ullapool
+    Retrieve Weather Parameters for: port hedland,au
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=port%20hedland
+    Retrieve Weather Parameters for: biak,id
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=biak
+    Retrieve Weather Parameters for: kathmandu,np
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=kathmandu
+    Retrieve Weather Parameters for: progreso,mx
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=progreso
+    Retrieve Weather Parameters for: bilibino,ru
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=bilibino
+    Retrieve Weather Parameters for: borlange,se
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=borlange
+    Retrieve Weather Parameters for: sola,vu
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=sola
+    Retrieve Weather Parameters for: bandarbeyla,so
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=bandarbeyla
+    Retrieve Weather Parameters for: adrar,dz
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=adrar
+    Retrieve Weather Parameters for: port-gentil,ga
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=port-gentil
+    Retrieve Weather Parameters for: port hardy,ca
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=port%20hardy
+    Retrieve Weather Parameters for: batemans bay,au
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=batemans%20bay
+    Retrieve Weather Parameters for: laguna,br
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=laguna
+    Retrieve Weather Parameters for: srednekolymsk,ru
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=srednekolymsk
+    Retrieve Weather Parameters for: podosinovets,ru
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=podosinovets
+    Retrieve Weather Parameters for: qandala,so
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=qandala
+    Retrieve Weather Parameters for: saskylakh,ru
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=saskylakh
+    Retrieve Weather Parameters for: maputo,mz
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=maputo
+    Retrieve Weather Parameters for: taolanaro,mg
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=taolanaro
+    Retrieve Weather Parameters for: noyabrsk,ru
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=noyabrsk
+    Retrieve Weather Parameters for: yithion,gr
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=yithion
+    Retrieve Weather Parameters for: dangtu,cn
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=dangtu
+    Retrieve Weather Parameters for: tura,ru
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=tura
+    Retrieve Weather Parameters for: harper,lr
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=harper
+    Retrieve Weather Parameters for: touros,br
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=touros
+    Retrieve Weather Parameters for: abhar,ir
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=abhar
+    Retrieve Weather Parameters for: angoram,pg
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=angoram
+    Retrieve Weather Parameters for: oksfjord,no
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=oksfjord
+    Retrieve Weather Parameters for: kaitangata,nz
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=kaitangata
+    Retrieve Weather Parameters for: melfort,ca
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=melfort
+    Retrieve Weather Parameters for: pumiao,cn
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=pumiao
+    Retrieve Weather Parameters for: lodja,cd
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=lodja
+    Retrieve Weather Parameters for: bargal,so
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=bargal
+    Retrieve Weather Parameters for: inhambane,mz
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=inhambane
+    Retrieve Weather Parameters for: kadoma,zw
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=kadoma
+    Retrieve Weather Parameters for: hofn,is
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=hofn
+    Retrieve Weather Parameters for: atar,mr
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=atar
+    Retrieve Weather Parameters for: sabang,id
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=sabang
+    Retrieve Weather Parameters for: matagami,ca
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=matagami
+    Retrieve Weather Parameters for: alpoyeca,mx
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=alpoyeca
+    Retrieve Weather Parameters for: oni,ge
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=oni
+    Retrieve Weather Parameters for: sao joao da barra,br
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=sao%20joao%20da%20barra
+    Retrieve Weather Parameters for: umm kaddadah,sd
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=umm%20kaddadah
+    Retrieve Weather Parameters for: shingu,jp
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=shingu
+    Retrieve Weather Parameters for: isangel,vu
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=isangel
+    Retrieve Weather Parameters for: mananjary,mg
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=mananjary
+    Retrieve Weather Parameters for: beruwala,lk
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=beruwala
+    Retrieve Weather Parameters for: coos bay,us
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=coos%20bay
+    Retrieve Weather Parameters for: tarko-sale,ru
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=tarko-sale
+    Retrieve Weather Parameters for: faanui,pf
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=faanui
+    Retrieve Weather Parameters for: timra,se
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=timra
+    Retrieve Weather Parameters for: jiddah,sa
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=jiddah
+    Retrieve Weather Parameters for: slave lake,ca
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=slave%20lake
+    Retrieve Weather Parameters for: terrace,ca
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=terrace
+    Retrieve Weather Parameters for: pointe-noire,gp
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=pointe-noire
+    Retrieve Weather Parameters for: samalaeulu,ws
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=samalaeulu
+    Retrieve Weather Parameters for: ossora,ru
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=ossora
+    Retrieve Weather Parameters for: puerto ayora,ec
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=puerto%20ayora
+    Retrieve Weather Parameters for: anito,ph
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=anito
+    Retrieve Weather Parameters for: barentsburg,sj
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=barentsburg
+    Retrieve Weather Parameters for: umm lajj,sa
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=umm%20lajj
+    Retrieve Weather Parameters for: yanchukan,ru
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=yanchukan
+    Retrieve Weather Parameters for: siuna,ni
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=siuna
+    Retrieve Weather Parameters for: punta arenas,cl
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=punta%20arenas
+    Retrieve Weather Parameters for: abeche,td
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=abeche
+    Retrieve Weather Parameters for: doha,kw
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=doha
+    Retrieve Weather Parameters for: najran,sa
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=najran
+    Retrieve Weather Parameters for: lebu,cl
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=lebu
+    Retrieve Weather Parameters for: abu dhabi,ae
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=abu%20dhabi
+    Retrieve Weather Parameters for: cuamba,mz
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=cuamba
+    Retrieve Weather Parameters for: tres marias,mx
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=tres%20marias
+    Retrieve Weather Parameters for: opuwo,na
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=opuwo
+    Retrieve Weather Parameters for: timbiras,br
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=timbiras
+    Retrieve Weather Parameters for: vila,vu
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=vila
+    Retrieve Weather Parameters for: tezu,in
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=tezu
+    Retrieve Weather Parameters for: sisimiut,gl
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=sisimiut
+    Retrieve Weather Parameters for: ostrovnoy,ru
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=ostrovnoy
+    Retrieve Weather Parameters for: beloha,mg
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=beloha
+    Retrieve Weather Parameters for: maragogi,br
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=maragogi
+    Retrieve Weather Parameters for: vallenar,cl
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=vallenar
+    Retrieve Weather Parameters for: mushie,cd
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=mushie
+    Retrieve Weather Parameters for: santa luzia,br
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=santa%20luzia
+    Retrieve Weather Parameters for: avera,pf
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=avera
+    Retrieve Weather Parameters for: fairview,ca
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=fairview
+    Retrieve Weather Parameters for: rabo de peixe,pt
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=rabo%20de%20peixe
+    Retrieve Weather Parameters for: nishihara,jp
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=nishihara
+    Retrieve Weather Parameters for: ketchikan,us
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=ketchikan
+    Retrieve Weather Parameters for: porto novo,cv
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=porto%20novo
+    Retrieve Weather Parameters for: waingapu,id
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=waingapu
+    Retrieve Weather Parameters for: hanko,fi
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=hanko
+    Retrieve Weather Parameters for: sechura,pe
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=sechura
+    Retrieve Weather Parameters for: jacareacanga,br
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=jacareacanga
+    Retrieve Weather Parameters for: destin,us
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=destin
+    Retrieve Weather Parameters for: haines junction,ca
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=haines%20junction
+    Retrieve Weather Parameters for: nogliki,ru
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=nogliki
+    Retrieve Weather Parameters for: ancud,cl
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=ancud
+    Retrieve Weather Parameters for: natal,br
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=natal
+    Retrieve Weather Parameters for: kuche,cn
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=kuche
+    Retrieve Weather Parameters for: haibowan,cn
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=haibowan
+    Retrieve Weather Parameters for: hovd,mn
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=hovd
+    Retrieve Weather Parameters for: caravelas,br
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=caravelas
+    Retrieve Weather Parameters for: mingshui,cn
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=mingshui
+    Retrieve Weather Parameters for: rosetta,eg
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=rosetta
+    Retrieve Weather Parameters for: padang,id
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=padang
+    Retrieve Weather Parameters for: arlit,ne
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=arlit
+    Retrieve Weather Parameters for: kilcormac,ie
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=kilcormac
+    Retrieve Weather Parameters for: villazon,bo
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=villazon
+    Retrieve Weather Parameters for: busselton,au
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=busselton
+    Retrieve Weather Parameters for: swarzedz,pl
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=swarzedz
+    Retrieve Weather Parameters for: redmond,us
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=redmond
+    Retrieve Weather Parameters for: khorixas,na
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=khorixas
+    Retrieve Weather Parameters for: kutum,sd
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=kutum
+    Retrieve Weather Parameters for: dolores,uy
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=dolores
+    Retrieve Weather Parameters for: kavieng,pg
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=kavieng
+    Retrieve Weather Parameters for: mocambique,mz
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=mocambique
+    Retrieve Weather Parameters for: mataura,pf
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=mataura
+    Retrieve Weather Parameters for: pangnirtung,ca
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=pangnirtung
+    Retrieve Weather Parameters for: zorritos,pe
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=zorritos
+    Retrieve Weather Parameters for: bengkulu,id
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=bengkulu
+    Retrieve Weather Parameters for: kanchanaburi,th
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=kanchanaburi
+    Retrieve Weather Parameters for: quesnel,ca
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=quesnel
+    Retrieve Weather Parameters for: ahipara,nz
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=ahipara
+    Retrieve Weather Parameters for: mehamn,no
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=mehamn
+    Retrieve Weather Parameters for: mount pleasant,us
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=mount%20pleasant
+    Retrieve Weather Parameters for: bowen,au
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=bowen
+    Retrieve Weather Parameters for: hede,cn
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=hede
+    Retrieve Weather Parameters for: nenjiang,cn
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=nenjiang
+    Retrieve Weather Parameters for: castro,cl
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=castro
+    Retrieve Weather Parameters for: marsh harbour,bs
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=marsh%20harbour
+    Retrieve Weather Parameters for: bagdarin,ru
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=bagdarin
+    Retrieve Weather Parameters for: qaqortoq,gl
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=qaqortoq
+    Retrieve Weather Parameters for: seoni malwa,in
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=seoni%20malwa
+    Retrieve Weather Parameters for: westport,ie
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=westport
+    Retrieve Weather Parameters for: takoradi,gh
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=takoradi
+    Retrieve Weather Parameters for: dwarka,in
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=dwarka
+    Retrieve Weather Parameters for: makakilo city,us
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=makakilo%20city
+    Retrieve Weather Parameters for: dombarovskiy,ru
+    http://api.openweathermap.org/data/2.5/weather?appid=74d08b88df719aeffa06bf72b52c87d8&units=imperial&q=dombarovskiy
 
 
 
@@ -4266,8 +1224,8 @@ else:
     city_coordinates_df2.to_csv("WeatherPy.csv")
 ```
 
-    Oops, we couldn't retrieve the weather parameters for (57) cities
-    Your new DataFrame has the weather information for (443) unique cities
+    Oops, we couldn't retrieve the weather parameters for (53) cities
+    Your new DataFrame has the weather information for (447) unique cities
     The DataFrame has been saved as WeatherPy2.csv
 
 
@@ -4294,7 +1252,7 @@ plt.show()
 
 
 
-![png](output_15_1.png)
+![png](output_13_1.png)
 
 
 
@@ -4315,7 +1273,7 @@ plt.show()
 
 
 
-![png](output_16_1.png)
+![png](output_14_1.png)
 
 
 
@@ -4336,7 +1294,7 @@ plt.show()
 
 
 
-![png](output_17_1.png)
+![png](output_15_1.png)
 
 
 
@@ -4357,7 +1315,7 @@ plt.show()
 
 
 
-![png](output_18_1.png)
+![png](output_16_1.png)
 
 
 
@@ -4374,6 +1332,6 @@ print('3. The clouds seem pretty disperse, whithout a visible correlation with t
 
     Observable Trends
     1.The temperature increases as coordinates get closer to the equator. The cities around the equator have the highest temperatures
-    2.The wind speed for most of the cities is under 10 mph. The median is 6.93mph. There is a possible outlier with a wind speed of 39.15mph in Pahrump in the US
+    2.The wind speed for most of the cities is under 10 mph. The median is 6.22mph. There is a possible outlier with a wind speed of 39.15mph in Pahrump in the US
     3. The clouds seem pretty disperse, whithout a visible correlation with the latitude.
 
