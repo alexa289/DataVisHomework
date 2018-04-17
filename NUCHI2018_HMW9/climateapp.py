@@ -66,10 +66,10 @@ def precipitation():
     precipitation_list = [query]
 
     for result in query:
-        row = {}
-        row['date'] = result[0]
-        row['tobs'] = result[1]
-        precipitation_list.append(row)
+        dict_result = {}
+        dict_result['date'] = result[0]
+        dict_result['tobs'] = result[1]
+        precipitation_list.append(dict_result)
     return jsonify(precipitation_list)
 
 
@@ -83,11 +83,11 @@ def stations():
     
     station_list = []
     for result in query:
-        row = {}
-        row['name'] = result[0]
-        row['station'] = result[1]
-        row['elevation'] = result[2]
-        station_list.append(row)
+        dict_result = {}
+        dict_result['name'] = result[0]
+        dict_result['station'] = result[1]
+        dict_result['elevation'] = result[2]
+        station_list.append(dict_result)
     return jsonify(station_list)
 
 
@@ -100,11 +100,11 @@ def tobs():
 
     tobs_list = []
     for result in query:
-        row = {}
-        row["station"] = result[0]
-        row["date"] = result[1]
-        row["temperature"] = int(result[2])
-        tobs_list.append(row)
+        dict_result = {}
+        dict_result["station"] = result[0]
+        dict_result["date"] = result[1]
+        dict_result["temperature"] = int(result[2])
+        tobs_list.append(dict_result)
 
     return jsonify(tobs_list)
 
@@ -119,12 +119,12 @@ def specify_date(start):
     #Create JSON
     query_list = []
     for result in query:
-        row = {}
-        row['date'] = result[0]
-        row['min temperature'] = str(result[1])
-        row['max temperature'] = str(result[2])
-        row['avg temperature'] = str(result[3])
-        query_list.append(row)
+        dict_result = {}
+        dict_result['date'] = result[0]
+        dict_result['min temperature'] = str(result[1])
+        dict_result['max temperature'] = str(result[2])
+        dict_result['avg temperature'] = str(result[3])
+        query_list.append(dict_result)
 
     return jsonify(query_list)
 
@@ -140,13 +140,13 @@ def range_date(start,end):
     #Create JSON
     query_list = []
     for result in query:
-        row = {}
-        row['start date'] = start
-        row['end date'] = end
-        row['min temperature'] = str(result[1])
-        row['max temperature'] = str(result[2])
-        row['avg temperature'] = str(result[3])
-        query_list.append(row)
+        dict_result = {}
+        dict_result['start date'] = start
+        dict_result['end date'] = end
+        dict_result['min temperature'] = str(result[1])
+        dict_result['max temperature'] = str(result[2])
+        dict_result['avg temperature'] = str(result[3])
+        query_list.append(dict_result)
 
     return jsonify(query_list)
 
