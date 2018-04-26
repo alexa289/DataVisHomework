@@ -1,0 +1,88 @@
+/*Here I will set up the style of my web page*/
+
+/*body settings*/
+body {
+	padding: 15px;
+	margin: 15px;
+	font-family: 'Titillium Web', sans-serif;	
+}
+
+/*dropdown menu settings*/
+.dropdown-menu{
+	background-color: white;
+	font-size: .9em;
+	opacity: 0.60;
+}
+
+/*image padding*/
+img{
+	padding: 5px
+}
+
+/*Header 2 settings*/
+h2 {
+	color: black;
+	padding: 10px;
+	margin: 10px;
+}
+
+/*Paragraph settings*/
+p {
+	color: black;
+	padding: 8px;
+	margin: 8px;
+	text-align: justify
+}
+
+/*Table settings for data.html*/
+table {
+    border-collapse: collapse;
+	width: 20%;
+
+}
+.table-scroll {
+	/*size of table view*/
+	height: 500px;
+	/*scrollable functionality handling of overflow*/
+	overflow-y: scroll;
+}
+
+th {
+	background-color: steelblue;
+	color: seashell;
+	text-align: center;
+	border: 5px solid lightgray;
+}
+
+td {
+    border: 5px solid lightgray;
+    text-align: center;
+}
+
+/*Highlight the row when I place the mouse on top*/
+tr:hover
+{
+	background-color: whitesmoke;
+	
+}
+
+/*footer settings for all .html*/
+.footer-text {
+	text-decoration-color: whitesmoke;
+	text-align: center;
+	color: slategray;
+	font-size: 15px;
+}
+
+/*icons in the footer */
+.fa {
+	color: steelblue;
+  	padding: 10px;
+	width: 20px;  
+	font-size: 25px;
+  	margin: 2px 2px;
+}
+
+.fa:hover {
+    opacity: 0.50;
+}
