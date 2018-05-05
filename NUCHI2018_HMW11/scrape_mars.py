@@ -64,7 +64,7 @@ def scrape():
     jpl_nasa_path = href_list[1].strip('/')
 
     # Assign the url string to a variable called featured_image_url
-    featured_image_url = '%s%s%s' % ("https://", jpl_nasa_path, img_url)
+    featured_image_url = "https://"+jpl_nasa_path+img_url
 
     # Add the featured image to the data dictionary
     mars_data_dict["featured_image_url"] = featured_image_url
@@ -137,8 +137,8 @@ def scrape():
         html_soup = bs(html_b, 'html.parser')
         h2_title = html_soup.find("h2", class_="title").text
         div = html_soup.find("div", class_="downloads")
-        for li in div:
-                a = div.find('a')
+        #for li in div:
+        a = div.find('a')
         href_url = a.attrs['href']
         hemispheres = {
             'img_title': h2_title,
@@ -146,10 +146,10 @@ def scrape():
         }
         hemispheres_img_url_list.append(hemispheres)
         browser.back()
-    print(mars_data_dict)
+        
     # Add the hemispheres data to the  dictionary
     mars_data_dict["hemisphere_images"] = hemispheres_img_url_list
-
+    print(mars_data_dict)
     # Return the dictionary
     return mars_data_dict
     

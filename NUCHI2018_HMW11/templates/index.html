@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Mission to Mars</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="static/style.css">
+</head>
+<style>
+    /*scrape data button*/
+.button {
+    background-color:  steelblue;
+    color: black;
+    cursor: hand;
+}
+
+/*Change the color of the button when selected*/
+.button:hover {
+    background-color: navy;
+    color: whitesmoke;
+    opacity: 60%;
+}
+
+/*Headers*/
+h1 {
+    color:  darkblue;
+}
+
+h2, h3 {
+    color:  black;
+}
+
+/*Body*/
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    background: rgb(198, 225, 247);
+    color: rgba(2, 2, 39, 0.815);
+
+  }
+
+/*Featured Image*/
+.img {
+    height: 90%;
+    width: 90%;
+
+}
+
+/*Weather Info*/
+.weather-box {
+    border-style: solid;
+    border-width: 4px;
+    border-color: whitesmoke;
+}
+
+/*Table Facts*/
+table, th, td {
+    border: 2px solid white;
+    font-size: 14px
+}
+
+/*footer settings for all .html*/
+.footer-text {
+	text-decoration-color: whitesmoke;
+	text-align: center;
+	color: slategray;
+	font-size: 15px;
+}
+
+/*icons in the footer */
+.fa {
+	color: steelblue;
+  	padding: 10px;
+	width: 20px;  
+	font-size: 25px;
+  	margin: 2px 2px;
+}
+
+.fa:hover {
+    opacity: 0.50;
+}
+</style>
+
+<body>
+    <div class="container">
+
+        <div class="jumbotron text-center">
+            <h1>Mission to Mars</h1>
+            <p>
+                <a class="button btn" href="/scrape" role="button">Click here to scrape new Mars data </a>
+            </p>
+        </div>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-xs-12 col-lg-4">
+                    <h2>Latest Mars news.</h2>
+                    <h3> {{mars.title}}</h3>
+                    <p> {{mars.paragraph}} </p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-8 col-xs-12 big_box">
+                    <div class="data-fancybox-href"></div>
+                    <h2>Featured Mars Image.</h2>
+                    <!--This is not working. It only reads the string https://www.jpl.nasa.gov/spaceimages/ The error is not showing in jupyter ntbook :(-->
+                    <!--<img class="img" src="{{featured_image_url}}" alt="Featured Mars Image" />-->
+                    <img class="img" src="https://www.jpl.nasa.gov/spaceimages/images/wallpaper/PIA17449-1920x1200.jpg" alt="Featured Mars Image" />
+                </div>
+                </br>
+                <hr>
+                <div class="col-xs-12 col-lg-4">
+                    <div class="row weather-box">
+                        <div class="col-md-8">
+                            <h3>Mars Weather</h3>
+                            <p>{{mars.mars_weather}}</p>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="col-xs-12">
+                        <div>
+                            <h3>Mars Facts</h3>
+                            <p>{{mars.mars_facts | safe}}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- jQuery for Bootstrap JavaScript plugins -->
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+            <!-- Latest compiled JavaScript -->
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+                crossorigin="anonymous"></script>
+            <!-- <script src="js/bootstrap.min.js"></script> -->
+            </body>
+            <div class="container-fluid">
+                <div class="text-center">
+                    <footer style="background-color: rgb(178, 212, 233)">
+                        <a href="https://github.com/alexa289">
+                            <i class="fa fa-github"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/alexandria-cabello-91b471157/">
+                            <i class="fa fa-linkedin"></i>
+                        </a>
+                        <a href="https://twitter.com/alexa_289">
+                            <i class="fa fa-twitter"></i>
+                        </a>
+                        <p class="footer-text">
+                            <small> © Copyright Alexandria Cabello April 2018
+                                </br>
+                                NWU Data Science Boot Camp
+                            </small>
+                        </p>
+                    </footer>
+                </div>
+            </div>
+        
+            </html>
