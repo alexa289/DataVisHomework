@@ -10,7 +10,7 @@ from selenium import webdriver
 #Boiler plate code to init browser..define path
 def init_browser():
     executable_path = {"executable_path": "chrome/chromedriver"}
-    return Browser("chrome", **executable_path, headless=False)
+    return Browser("chrome", **executable_path, headless=True)
 
 #Define a function called scrape that will execute all of your scraping code from above and return one Python dictionary containing all of the scraped data.
 def scrape():
@@ -18,7 +18,6 @@ def scrape():
 
     #Create an empty dict to append scraped data in step 1
     mars_data_dict = {}
-
 
     #Copy all the code from the jupyter notebook and append all data scraped into the dictionary
     #-------NASA MARS NEWS-------
@@ -49,9 +48,8 @@ def scrape():
 
     #find the url of the img
     img_url = jpl_mars.find('a', {'id': 'full_image', 'data-fancybox-href': True}).get('data-fancybox-href')
-    #get the base url from the href of the webpage (jpl_logo class)
-    #base_jpl_href = jpl_mars.find_all('div', class_='jpl_logo')
-    #use BS to create obkect, parse with lxml
+
+    #use BS to create object, parse with lxml
     jpl_logo_soup = bs(html_browser, 'lxml')
     #loop through all the href of the url
 
@@ -137,7 +135,6 @@ def scrape():
         html_soup = bs(html_b, 'html.parser')
         h2_title = html_soup.find("h2", class_="title").text
         div = html_soup.find("div", class_="downloads")
-        #for li in div:
         a = div.find('a')
         href_url = a.attrs['href']
         hemispheres = {
