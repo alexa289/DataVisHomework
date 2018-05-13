@@ -18,8 +18,8 @@ $searchBtn.addEventListener('click', handleSearchButtonClick);
 $resetBtn.addEventListener('click', resetData);
 
 //Set filtereredData and resetData to dataSet
-var resetData = dataSet;
 var filteredData = dataSet;
+var resetData = dataSet;
 
 //Create the function to render the table 
 function renderTable() {
@@ -38,22 +38,22 @@ function renderTable() {
         } 
     }
 }
-function handleSearchButtonClick(event) {
+function handleSearchButtonClick() {
 
     // preventDefault to prevent page from refreshing
-    event.preventDefault();
+    //event.preventDefault();
 
     var filteredDate = $dateTimeInput.value.trim();
-    if (filteredDate != ""){
-        filteredData = filteredData.filter(function(data){
+    if (filteredDate !=""){
+        filteredData = dataSet.filter(function(data){
         var dateTimeData = data.datetime;
         return dateTimeData === filteredDate;
         });
     };
     
     var filteredCountry = $countryInput.value.trim().toLowerCase();
-    if (filteredCountry != "") {
-        filteredData = filteredData.filter(function (data) {
+    if (filteredCountry !="") {
+        filteredData = dataSet.filter(function (data) {
             var countryData = data.country.toLowerCase();
             return countryData === filteredCountry;
         });
@@ -61,15 +61,15 @@ function handleSearchButtonClick(event) {
 
     var filteredState = $stateInput.value.trim().toLowerCase();
     if (filteredState !="") {
-        filteredData = filteredData.filter(function(data){
+        filteredData = dataSet.filter(function(data){
             var stateData = data.state.toLowerCase();
             return stateData === filteredState;
         });
     };
     
     var filteredCity = $cityInput.value.trim().toLowerCase();
-    if (filteredCity != "") {
-        filteredData = filteredData.filter(function (data) {
+    if (filteredCity !="") {
+        filteredData = dataSet.filter(function (data) {
             var cityData = data.city.toLowerCase();
             return cityData === filteredCity;
         });
@@ -77,7 +77,7 @@ function handleSearchButtonClick(event) {
 
     var filteredShape = $shapeInput.value.trim().toLowerCase();
     if (filteredShape) {
-        filteredData = filteredData.filter(function(data){
+        filteredData = dataSet.filter(function(data){
             var shapeData = data.shape.toLowerCase();
             return shapeData === filteredShape;
         });
@@ -97,8 +97,9 @@ function handleSearchButtonClick(event) {
     }
 
     function resetForm(){
-        document.getElementById("UFOForm").reset();
+        document.getElementById("#UFOForm").reset();
     }
 
     // Render the table for the first time on page load
-    renderTable();
+renderTable();
+
