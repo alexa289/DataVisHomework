@@ -25,50 +25,50 @@
 // buildDropdown()
 
 
-// //-------------
-// function buildDropdown() {
-//     var selDataset = document.getElementById("selDataset");
+//-------------
+function buildDropdown() {
+    var selDataset = document.getElementById("selDataset");
 
-//     Plotly.d3.json('/names', function (error, data) {
-//         if (error) return console.warn(error)
-//         for (i = 0; i < data.length; i++) {
-//             //name = data[i]
-//             var option = document.createElement("option");
-//             option.text = data[i]
-//             option.value = data[i]
-//             //select.add(option, 0)
-//             selDataset.appendChild(option);
-//         }
-//         //getData(data[0], buildDropdown);
-//     }
-//     )
-// }
+    Plotly.d3.json('/names', function (error, data) {
+        if (error) return console.warn(error)
+        for (i = 0; i < data.length; i++) {
+            
+            var option = document.createElement("option");
+            option.text = data[i]
+            option.value = data[i]
+            
+            selDataset.appendChild(option);
+        }
+        //getData(data[0], buildDropdown);
+    }
+    )
+}
 
-// buildDropdown()
+buildDropdown()
 
 
-function getSampleNames() {
-    var selector = document.getElementById('selDataset');
-    var url = "/names";
-    Plotly.d3.json(url, function (error, response) {
-        if (error) return console.warn(error);
-        var data = response;
-        data.map(function (sample) {
-            var option = document.createElement('option')
-            option.text = sample
-            option.value = sample
-            selector.appendChild(option)
-        });
-    });
-};
+// function getSampleNames() {
+//     var selector = document.getElementById('selDataset');
+//     var url = "/names";
+//     Plotly.d3.json(url, function (error, response) {
+//         if (error) return console.warn(error);
+//         var data = response;
+//         data.map(function (sample) {
+//             var option = document.createElement('option')
+//             option.text = sample
+//             option.value = sample
+//             selector.appendChild(option)
+//         });
+//     });
+// };
 
-getSampleNames();
+// getSampleNames();
 
-function optionChanged(sample) {
-    updatePie(sample);
-    updateBubble(sample);
-    updateMetadata(sample);
-};
+// function optionChanged(sample) {
+//     updatePie(sample);
+//     updateBubble(sample);
+//     updateMetadata(sample);
+// };
 
 
 
