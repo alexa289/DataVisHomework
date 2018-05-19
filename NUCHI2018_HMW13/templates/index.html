@@ -8,7 +8,7 @@
     <!--Use Bootstrap-->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <!--use the ultrafast plotly.js CDN link. Provided by Fastly.Source https://plot.ly/javascript/getting-started/-->
-    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <!--<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>-->
 </head>
 <body>
     <div class="container-fluid">
@@ -25,10 +25,10 @@
             <div class="panel-body">
                 <!--Create the dropdown button. Use aria haspopup property to indicate popup content submenu.Use aria-expanded to indicate state of collapsible element, from ARIA spec 1.0 https://www.w3.org/TR/wai-aria/-->
                 <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown" aria-expand="true" aria-haspopup="true" >
-                    <select id="sample" onchange="optionChanged(this.value)"></select>
+                    <select class="row" id="selDataset" onchange="optionChanged(this.value)"></select>
                 </button>
             </div>
-            <div id="metadata" class="panel panel-primary">
+            <div id="sampleMetadata" class="panel panel-primary">
                 <div class="panel-heading">
                     <h5>Sample Metadata</h5>
                 </div>
@@ -41,11 +41,11 @@
             </div>
         </div>
         <div class="col-xs-6 col-s-6 col md-6">
-            <div id="pie_chart"></div>
+            <div id="pie"></div>
             <h5>BellyButton Pie Chart</h5>
         </div>
         <div class="col xs-6 col-s-6 col-md-6">
-            <div id="other-graph"></div>
+            <div id="other"></div>
             <h5>BellyButton Washing Frequency</h5>
             <p>Scrubs per Week</p>
         </div>
@@ -57,9 +57,37 @@
         </div>
     </div>
     </div>
+    <!-- <script>
+    //build the dropdown button with the samples
+        function buildDropdown(names) {
+            //loop through the names
+            for (i = 0; i < names.length; i++) {
+                var option = document.createElement("option");
+                var element = document.getElementById("selDataset").options.add(option);
+                option.text = names[i];
+                option.value = names[i];
+            }
+        }
+
+        function getData() {
+
+            //get the names from the samples and build dropdown buttn 
+            Plotly.d3.json("/names", function (error, names) {
+                if (error) return console.warn(error);
+                buildDropdown(names);
+            })
+        }
+
+        //get all the initial data 
+        getData(names[0], buildDropdown);
+    </script> -->
+    
     <!--Use D3 visualization library-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.7.3/d3.min.js"></script>
     <!--Read the javascript app file-->
-    <script type="text/javas" src="app.js"></script>
+    <!-- <script type="text/javascript" src="static/app.js"></script> -->
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <script src="{{ url_for('static', filename='app.js') }}"></script>
 </body>
 </html>
+
