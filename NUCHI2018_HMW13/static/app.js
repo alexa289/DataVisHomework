@@ -21,6 +21,9 @@ function buildDropdown() {
 //Call the function
 buildDropdown()
 
+
+
+
 // generate a random color function. Copied from https://stackoverflow.com/questions/30143082/how-to-get-color-value-from-gradient-by-percentage-with-javascript/30144587
 function pickHex(color1, color2, weight) {
     var w1 = weight;
@@ -117,4 +120,9 @@ function getValue() {
             restylePlotly(update);
         });
     };
+function optionChanged(sampleID) {
 
+
+    buildPie(sampleID)
+
+}
