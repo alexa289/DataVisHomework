@@ -25,19 +25,23 @@ var resetData = dataSet;
 function renderTable() {
     $tbody.innerHTML = "";
     //Loop through the dataobject create new object and its inputfields
-    for (var i=0; i<filteredData.lenght; i++){
+    console.log("This should be running")
+    for (var i=0; i<filteredData.length; i++){
         var data = filteredData[i];
         var inputfields = Object.keys(data);
         //Add a new row for tbody
         var $row = $tbody.insertRow(i);
+    //    console.log("Row",$row)
         //Loop through each inputfield and create a new value in the cell for every field
         for (var j = 0; j<inputfields.length; j++) {
             var inputfield = inputfields[j];
             var $cell = $row.insertCell(j);
             $cell.innerText = data[inputfield];
+        // console.log("cell",$cell.innerText)
         } 
     }
 }
+
 function handleSearchButtonClick() {
 
     // preventDefault to prevent page from refreshing
